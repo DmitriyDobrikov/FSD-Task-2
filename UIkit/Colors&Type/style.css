@@ -11,7 +11,7 @@ ul {
 
 div {
   float: left;
-  width: 40%;
+  width: 45%;
 }
 
 
@@ -37,8 +37,8 @@ li {
 li:before{
   content: '';
   display: inline-block;
-  height: 71px;
-  width: 71px;
+  height: 70px;
+  width: 70px;
   vertical-align: middle;
   border-radius:10%;
   margin-left:10%;
@@ -78,11 +78,63 @@ li:before{
   opacity: 5%;
 }
 
+.t {
+  position: relative;
+}
 
 
-
-.t:before {
+.H1:before {
   content: "H1";
+  font-size: 24px;
   display: inline;
   vertical-align: middle;
+  position:absolute;
+  margin-top: 20px; 
+  margin-left: -65px;
 }
+
+
+
+.H2:before {
+  content: "H2";
+  font-size: 19px;
+  display: inline;
+  vertical-align: middle;
+  position:absolute;
+  margin-top: 20px; 
+  margin-left: -65px;
+}
+
+
+.H3:before {
+  content: "H3";
+  font-size: 12px;
+  display: inline;
+  vertical-align: middle;
+  position:absolute;
+  margin-top: 16px; 
+  margin-left: -55px;
+}
+
+
+.Body:before {
+  content: "Body";
+  font-size: 12px;
+  display: inline;
+  vertical-align: middle;
+  position:absolute;
+  margin-top: 1px; 
+  margin-left: -85px;
+}
+
+
+
+.h {
+  margin-top: 15%;
+  margin-left: 200px;
+}
+
+
+
+
+

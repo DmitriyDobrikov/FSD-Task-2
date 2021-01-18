@@ -37,8 +37,8 @@ li {
 li:before{
   content: '';
   display: inline-block;
-  height: 71px;
-  width: 71px;
+  height: 70px;
+  width: 70px;
   vertical-align: middle;
   border-radius:10%;
   margin-left:10%;
@@ -85,7 +85,7 @@ li:before{
 
 .H1:before {
   content: "H1";
-  font-size: 30px;
+  font-size: 24px;
   display: inline;
   vertical-align: middle;
   position:absolute;
@@ -97,7 +97,7 @@ li:before{
 
 .H2:before {
   content: "H2";
-  font-size: 24px;
+  font-size: 19px;
   display: inline;
   vertical-align: middle;
   position:absolute;
@@ -108,7 +108,7 @@ li:before{
 
 .H3:before {
   content: "H3";
-  font-size: 15px;
+  font-size: 12px;
   display: inline;
   vertical-align: middle;
   position:absolute;
@@ -119,6 +119,7 @@ li:before{
 
 .Body:before {
   content: "Body";
+  font-size: 12px;
   display: inline;
   vertical-align: middle;
   position:absolute;
@@ -129,20 +130,9 @@ li:before{
 
 
 .h {
-  margin-top: 100px;
+  margin-top: 15%;
   margin-left: 200px;
 }
-
-.label {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: black;
-}
-
-
-
-
 
 
 
