@@ -4,16 +4,10 @@ body{
   font-family: "Montserrat",sans-serif;
 }
 
-ul {
-  list-style: none;
-  margin-top: 20%;
-}
-
-div {
+.in {
   float: left;
-  width: 45%;
+  margin: 5%;
 }
-
 
 h1 {
   font-size: 30px;
@@ -27,114 +21,45 @@ h3 {
   font-size: 15px;
 }
 
-li {
-  padding: 5px;
-  font-size: 20px;
-  margin-left: 30px;
-  padding-top: 13.85px;
-}
-
-li:before{
-  content: '';
-  display: inline-block;
-  height: 70px;
-  width: 70px;
-  vertical-align: middle;
-  border-radius:10%;
-  margin-left:10%;
-  margin-right: 40px;
-
-}
-
-.stringcorrect {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.green:before {
+.green {
   background-color: #6FCF97;
 }
-.purple:before {
+.purple {
   background-color: #BC9CFF;
 }
 
-.darkshade100:before {
-  background-color: #1F2041;
+.darkshade100 {
+  color: #1F2041;
 }
-.darkshade75:before {
-  background-color: #1F2041;
+.darkshade75 {
+  color: #1F2041;
   opacity: 75%;
 }
-.darkshade50:before {
-  background-color: #1F2041;
+.darkshade50 {
+  color: #1F2041;
   opacity: 50%;
 }
-.darkshade25:before {
+.darkshade25 {
   background-color: #1F2041;
   opacity: 25%;
 }
-.darkshade5:before {
+.darkshade5 {
   background-color: #1F2041;
   opacity: 5%;
 }
 
-.t {
-  position: relative;
+#registration {
+  border-radius: 10px;
+  border-color: #BC9CFF;
+  color: #BC9CFF;
+  background-color: white;
+  border-style: solid;
 }
 
-
-.H1:before {
-  content: "H1";
-  font-size: 24px;
-  display: inline;
-  vertical-align: middle;
-  position:absolute;
-  margin-top: 20px; 
-  margin-left: -65px;
+#login {
+  border-radius: 10px;
+  border-color: #BC9CFF;
+  color: white;
+  background-color: #BC9CFF;
+  border-style: solid;
 }
-
-
-
-.H2:before {
-  content: "H2";
-  font-size: 19px;
-  display: inline;
-  vertical-align: middle;
-  position:absolute;
-  margin-top: 20px; 
-  margin-left: -65px;
-}
-
-
-.H3:before {
-  content: "H3";
-  font-size: 12px;
-  display: inline;
-  vertical-align: middle;
-  position:absolute;
-  margin-top: 16px; 
-  margin-left: -55px;
-}
-
-
-.Body:before {
-  content: "Body";
-  font-size: 12px;
-  display: inline;
-  vertical-align: middle;
-  position:absolute;
-  margin-top: 1px; 
-  margin-left: -85px;
-}
-
-
-
-.h {
-  margin-top: 15%;
-  margin-left: 200px;
-}
-
-
-
-
-
