@@ -2,23 +2,21 @@
 
 body{
   font-family: "Montserrat",sans-serif;
+  background-color: #E5E5E5;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
 
 .in {
   float: left;
   margin: 5%;
+  
 }
-
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 15px;
+.inFooter {
+  float: left;
+  margin-right: 10px;
+  display: inline-block;
 }
 
 .green {
@@ -62,4 +60,38 @@ h3 {
   color: white;
   background-color: #BC9CFF;
   border-style: solid;
+}
+.fn {
+  display: flex;
+  flex-direction: column;
+}
+
+.inFooter {
+  float: left;
+  margin-right: 10px;
+}
+
+.footerWidgets {
+  display: inline-block;
+  min-width: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.headerInit {
+  display: inline-block;
+  min-width: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+.headerNotInit {
+  display: inline-block;
+  min-width: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }
