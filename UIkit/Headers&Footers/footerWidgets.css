@@ -1,0 +1,16 @@
+.footerWidgets {
+    display: inline-block;
+    min-width: 100%;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  .fn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .copyrightBar {
+    display: block;
+  }

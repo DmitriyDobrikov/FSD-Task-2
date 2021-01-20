@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="headerInit.css">
     <link rel="stylesheet" href="headerNotInit.css">
     <link rel="stylesheet" href="footerWidgets.css">
-    <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href="footerCreative.css">
+    <link rel="import" href="/footerWidgets.html">
 
   </head>
   <body>
@@ -19,9 +20,9 @@
 
       <div class="headerNotInit">
 
-        <div class="icon in">
-          <img src="Group.jpg">
-          <img src="TOXIN.jpg">
+        <div id="icon in">
+          <img src="imagines/Group.jpg">
+          <img src="imagines/TOXIN.jpg">
         </div>
 
 
@@ -47,9 +48,9 @@
 
 
       <div class="headerInit">
-        <div class="icon in">
-          <img src="Group.jpg">
-          <img src="TOXIN.jpg">
+        <div class="in">
+          <img src="imagines/Group.jpg">
+          <img src="imagines/TOXIN.jpg">
         </div>
 
 
@@ -72,8 +73,12 @@
 
 
 
-
-
+<!-- 
+      <script>
+        let link = document.querySelector('link[rel=import]');
+        let content = link.import.querySelector('#w');
+        document.body.appendChild(content.cloneNode(true));
+      </script> -->
 
 
 
@@ -81,8 +86,8 @@
 
       <div class="iconDown inFooter">
         <div class="icon">
-          <img src="Group.jpg">
-          <img src="TOXIN.jpg">
+          <img src="imagines/Group.jpg">
+          <img src="imagines/TOXIN.jpg">
         </div>
 
         <div>
@@ -135,12 +140,11 @@
 
       </div>
 
-
-
-
-
-
-
+      <div class="copyrightBar footerWidgets">
+        <span>Copyright © 2018 Toxin отель. Все права зачищены.</span>
+        <img src="imagines/twitter.jpg">
+        <img src="imagines/facebook.jpg">
+        <img src="imagines/instagram.jpg">
       </div>
 
 
@@ -150,6 +154,37 @@
 
 
 
+
+
+
+
+
+      <div class="footerCreative">
+
+        <div id="footerCreativeIcon">
+          <img src="imagines/Group.jpg">
+          <img src="imagines/TOXIN.jpg">
+        </div>
+
+        <span>Copyright © 2018 Toxin отель. Все права зачищены.</span>
+        <img src="imagines/twitter.jpg">
+        <img src="imagines/facebook.jpg">
+        <img src="imagines/instagram.jpg">
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
 
 
 
