@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
+
+body{
+  font-family: "Montserrat",sans-serif;
+  background-color: rgba(31, 32, 65, 0.05);
+  font-size: 14px;
+
+}
+
+.loginPanel {
+  background-color: #ffffff;
+  width: 380px;
+  height: 358px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  display: block;
+}
+
+.inputUserLogin {
+  width: 84.2%;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  margin: 10px;
+}
+
+input.inputUserLogin::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+  font-weight: 400;
+}
+
+.buttonClassBig {
+  width: 84.2%;
+  height: 44px;
+  border: 1px solid;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: #ffffff;
+  font-weight: 700;
+  margin: 20px;
+}
+
+.buttonClassSmole {
+  width: 99px;
+  height: 44px;
+  margin: 20px;
+  border: 2px solid;
+  border-radius: 22px;
+  color: #BC9CFF;
+  border-color: #BC9CFF;
+  font-weight: 700;
+  background-color:#ffffff;
+}
+ 
+.center {
+  text-align: center;
+} 
+
+
+.title {
+  font-weight: 700;
+  font-size: 29px;
+  text-align: left;
+}
+
+.leftTitle {
+  width: 84.2%;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  margin: 10px; 
+  margin: 0 auto;
+}
+
+.createAccount {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
