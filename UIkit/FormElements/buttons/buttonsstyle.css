@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
+
+body{
+  font-family: "Montserrat",sans-serif;
+  background-color: rgba(31, 32, 65, 0.05);
+  font-size: 14px;
+}
+
+.buttonsBlock {
+  background-color: #ffffff;
+  width: 218px;
+  height: 358px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  display: inline-table;
+}
+
+
+#buttonClassBig {
+  width: 320px;
+  height: 44px;
+  border: 1px solid;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: #ffffff;
+  font-weight: 700;
+  margin: 20px;
+}
+.button-smole-border {
+  width: 95px;
+  height: 40px;
+  color: #BC9CFF;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 0px solid;
+  border-radius: 22px;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.button-smole-border:active {
+  border: 2px solid;
+  width: 99px;
+  height: 44px;
+  margin: 0%;
+  border: 2px rgba(255, 255, 255, 1) solid;
+  opacity: 0.5;
+}
+
+#button-smole {
+  width: 99px;
+  height: 44px;
+  margin: 5px;
+  color: #ffffff;
+  font-weight: 700;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: 0px solid;
+  border-radius: 22px;
+}
+
+#button-smole:active {
+  opacity: 0.5;
+}
+
+.button-div {
+  width: 99px;
+  height: 44px;
+  margin: 5px;
+  color: #ffffff;
+  font-weight: 700;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: 0px solid;
+  border-radius: 22px;
+  text-align: center;
+  float: left;
+}
+
+.opacity {
+  opacity: 1;
+}
+
+.button-smole-without-border {
+  border: 0px solid;
+  background: none;
+  font-weight: 700;
+  color: #BC9CFF;
+}
+
+
