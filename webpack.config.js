@@ -5,19 +5,37 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const webpack = require('webpack')
 
 const PATHS = {
-    // Path to main app dir
     src: path.join(__dirname, './src'),
-    // Path to Output dir
     dist: path.join(__dirname, './dist'),
-    // Path to Second Output dir (js/css/fonts etc folder)
     assets: 'assets/'
 }
 
 
+const pageNames = [
+    'form-elements', 'cards', 'main', 'colors-and-type', 'headers-and-footers', 
+  ];
+  
+  const entries = pageNames.reduce(
+    (accumulator, pageName) => (
+      { ...accumulator, ...{ [pageName]: `${PATHS.src}/site-pages/${pageName}/${pageName}.js` } }
+    ), {},
+  );
 
+//const PAGES_DIR = `${PATHS.src}/site-pages/`
+// const PAGES_DIR = pageNames.reduce(
+//     (accumulator, pageName) => (
+//       { ...accumulator, ...{ [pageName]: `${PATHS.src}/site-pages/${pageName}` } }
+//     ), {},
+// );
 
-const PAGES_DIR = `${PATHS.src}/pug/`
-const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
+//const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
+
+const sitePages = pageNames
+  .map((name) => new HtmlWebpackPlugin({
+    template: `./src/site-pages/${name}/${name}.pug`,
+    filename: `./${name}.html` ,
+    chunks: [`${name}`, 'vendors'],
+  }));
 
 
 
@@ -25,30 +43,21 @@ const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.p
 
 
 module.exports = {
-    entry: {
-        main: path.resolve(__dirname, './src/index.js'),
-    },
+    entry: entries,//{
+        // main: path.resolve(__dirname, './src/index.js'),
+    // },
 
     output: {
-        path: path.resolve(__dirname, './dist'),
-        filename: '[name].bundle.js',
+        path: PATHS.dist, // path.resolve(__dirname, './dist'),
+        filename: 'js/[name].bundle.js',
     },
 
-    // mode: 'development',
-    // devServer: {
-    //     historyApiFallback: true,
-    //     contentBase: path.resolve(__dirname, './dist'),
-    //     open: true,
-    //     compress: true,
-    //     hot: true,
-    //     port: 8081,
-    // },
+
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
         port: 9000,
         hot: true,
-        
       },
 
     plugins: [
@@ -59,23 +68,23 @@ module.exports = {
         //     filename: 'index.html', // название выходного файла
         // }),
 
-        // new CleanWebpackPlugin(),
+        new CleanWebpackPlugin(),
   
 
         // применять изменения только при горячей перезагрузке
         new webpack.HotModuleReplacementPlugin(),
 
-        ...PAGES.map(page => new HtmlWebpackPlugin({
-            template: `${PAGES_DIR}/${page}`,
-            filename: `./${page.replace(/\.pug/,'.html')}`
-          })),
-          new CleanWebpackPlugin(),
-    ],
+        // ...PAGES.map(page => new HtmlWebpackPlugin({
+        //     template: `${PAGES_DIR}/${page}`,
+        //     filename: `./${page.replace(/\.pug/,'.html')}`
+        //   })),
+        //PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug')),
 
-    // devServer: {
-    //     overlay: true,
-    //     open: true
-    //   },
+ 
+          
+    ].concat(sitePages),
+
+    
 
     module: {
         rules: [

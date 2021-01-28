@@ -1,6 +1,7 @@
 //import example from './images/example.png'
-import './styles/main.scss'
-
+//import './elements/buttons.scss'
+//import './styles/main.scss'
+//import './main.scss'
 
 
 class Game {
