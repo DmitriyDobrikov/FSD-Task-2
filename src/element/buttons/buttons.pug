@@ -1,0 +1,57 @@
+
+mixin button-paste(button_class, button_content)
+    if button_class == 'button-long'
+        button#button-big
+            div#button-big-div= button_content 
+                //- span= button_content
+            svg.str(width='18' height='17' viewbox='0 0 18 17' fill='none')
+                path(d='M9 0.426758L17.0156 8.44238L9 16.458L7.59375 15.0518L13.1719 9.42676H0.984375V7.45801H13.1719L7.59375 1.83301L9 0.426758Z' fill='white')
+    
+    else if button_class == 'button-smole'
+        button#button-smole= button_content 
+
+    else if button_class == 'button-smole-on'
+        button#button-smole(style='opacity: 0.5')= button_content 
+
+    else if button_class == 'button-smole-border'
+        button.button-smole-border
+            .forbutton= button_content 
+
+    else if button_class == 'button-smole-border-on'
+        button.button-smole-border(style='opacity: 0.5')
+            .forbutton= button_content 
+
+    else if button_class == 'button-smole-without-border'
+        button.button-smole-without-border= button_content 
+
+    else if button_class == 'button-smole-without-border-on'
+        button.button-smole-without-border(style='color: rgba(31, 32, 65, 0.5);')= button_content 
+
+
+
+
+
+
+
+
+
+
+
+    //- button#button-big
+    //-     div#button-big-div ПЕРЕЙТИ К ОПЛАТЕ
+    //-     svg.str(width='18' height='17' viewbox='0 0 18 17' fill='none')
+    //-         path(d='M9 0.426758L17.0156 8.44238L9 16.458L7.59375 15.0518L13.1719 9.42676H0.984375V7.45801H13.1719L7.59375 1.83301L9 0.426758Z' fill='white')
+    //- button#button-smole CLICK ME
+    //- button#button-smole(style='opacity: 0.5') CLICK ME
+    //- button.button-smole-border
+    //-     .forbutton CLICK ME
+    //- button.button-smole-border(style='opacity: 0.5')
+    //-     .forbutton CLICK ME
+    //- button.button-smole-without-border CLICK ME
+    //- button.button-smole-without-border(style='color: rgba(31, 32, 65, 0.5);\
+    //- ;') CLICK ME
+
+
+
+
+

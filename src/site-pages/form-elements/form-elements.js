@@ -2,6 +2,9 @@
 //import './elements/buttons.scss'
 //import './styles/main.scss'
 import './form-elements.scss'
-import '../../element/button-long/button-long.scss'
-
+import '../../element/buttons/buttons.scss'
+import '../../element/checkbox-buttons/checkbox-buttons.scss'
+import '../../element/shrift/fonts.scss'
+import '../../element/radio-button/radio-button.scss'
+import '../../element/toggle/toggle.scss'
 

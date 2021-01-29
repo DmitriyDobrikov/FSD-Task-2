@@ -1,0 +1,121 @@
+// .tgl {
+// 	display: none;
+  
+// 	// add default box-sizing for this scope
+// // 	&,
+// //   &:after,
+// //   &:before,
+// // 	& *,
+// //   & *:after,
+// //   & *:before,
+// 	& + .tgl-btn {
+// 		box-sizing: border-box;
+// 		&::selection {
+// 			background: none;
+// 		}
+// 	}
+  
+// 	+ .tgl-btn {
+// 		outline: 0;
+// 		display: block;
+// 		width: 40px;
+// 		height: 20px;
+// 		position: relative;
+// 		cursor: pointer;
+// 		border: 1px solid #BC9CFF;
+//     user-select: none;
+// 		&:after,
+//     	&:before {
+// 			position: relative;
+// 			display: block;
+// 			content: "";
+// 			width: 50%;
+// 			height: 100%;
+// 		}
+    
+// 		&:after {
+// 			left: 0;
+// 		}
+    
+// 		&:before {
+// 			display: none;
+// 		}
+// 	}
+  
+// 	&:checked + .tgl-btn:after {
+// 		left: 50%;
+// 	}
+// }
+
+// // themes
+// .tgl-light {
+// 	+ .tgl-btn {
+// 		background: #ffffff;
+// 		border-radius: 12px;
+// 		padding-top: 3px;
+// 		padding-bottom: 3px;
+// 		padding-right: 0px;
+// 		padding-left: 2px;
+// 		transition: all .4s ease;
+// 		&:after {
+// 			height: 12px;
+// 			width: 12px;
+// 			border-radius: 50%;
+// 			background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+// 			transition: all .2s ease;
+// 		}
+// 	}
+  
+// 	&:checked + .tgl-btn {
+// 		background: #ffffff;
+// 	}
+// }
+
+
+
+.toggle {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	&+label {
+		display: inline-flex;
+		align-items: flex-start;
+		user-select: none;
+		color: rgba(31, 32, 65, 0.5);
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 40px;
+			height: 20px;
+			flex-shrink: 0;
+			flex-grow: 0;
+			border: 1px solid #ADB5BD;
+			border-radius: 10px;
+			background-image: url('icon.svg');
+			background-repeat: no-repeat;
+			background-position: 15% center;
+			transition-property: background-position;
+			transition-duration: .4s;
+			background-size: 12px;	
+			margin-right: 10px;
+		}
+
+	}
+	&:checked+label::before {
+		border-color: #BC9CFF;
+		//background-image: url('button-icon.svg');
+		background-size: 12px;
+		background-position: 85%, center;
+		background-image: url('button-icon.svg');
+	}
+
+}
+.toggle-label {
+	width: 310px;
+	margin-top: 10px;
+}
+
+label:hover:before {
+	border-color: #BC9CFF;
+	background-image: url('button-icon.svg');
+}

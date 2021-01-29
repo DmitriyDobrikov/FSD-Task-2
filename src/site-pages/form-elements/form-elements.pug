@@ -1,31 +1,43 @@
-include ../../element/button-long/button-long
+include ../../element/buttons/buttons
+include ../../element/checkbox-buttons/checkbox-buttons
+include ../../element/radio-button/radio-button
+include ../../element/toggle/toggle
+
 
 html
   head
-    title My Site
+    title Form Elements
   body
-    h1 My Site
-    p Welcome to my super lame site.
-    //include ../../element/button-long/button-long
-    +article('Hello world')
-    ul
-      li kiuhih
-    ul(class = "qwe")
-      li AAAA
+    +button-paste('button-long' , "ПЕРЕЙТИ К ОПЛАТЕ")
+    br
+    br
+    +button-paste('button-smole', 'CLICK ME')
+    br
+    br
+    +button-paste('button-smole-on', 'CLICK ME')
+    br
+    br
+    +button-paste('button-smole-border', 'CLICK ME')
+    br
+    br
+    +button-paste('button-smole-border-on', 'CLICK ME')
+    br
+    br
+    +button-paste('button-smole-without-border', 'CLICK ME')
+    br
+    br
+    +button-paste('button-smole-without-border-on', 'CLICK ME')
+    br
+    br
+    +checkbox-paste()
+    br
+    br
+    +radio-button-paste()
+    br
+    br
+    +toggle-paste()
+    br
+    br
 
-    //+article('Hello world')
 
-
-//include ../../element/button-long/button-long.pug
-
-//head
-    title Pug
-    
-//body
-    block content 
-    p liuhoiu 
-    include ../../element/button-long/button-long.pug 
-    +article('Hello world')
-
-    +article('Hello world')
   
