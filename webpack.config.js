@@ -69,6 +69,13 @@ module.exports = {
         // }),
 
         new CleanWebpackPlugin(),
+
+        new webpack.ProvidePlugin({
+          $: 'jquery',
+          jQuery: 'jquery',
+          'window.$': 'jquery',
+          'window.jQuery': 'jquery',
+        }),
   
 
         // применять изменения только при горячей перезагрузке
@@ -83,6 +90,8 @@ module.exports = {
  
           
     ].concat(sitePages),
+
+    
 
     
 

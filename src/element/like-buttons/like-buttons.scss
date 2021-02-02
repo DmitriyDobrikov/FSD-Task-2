@@ -1,0 +1,96 @@
+$var1: #ffffff;
+$var2: #ffffff;
+
+$var1: #BC9CFF;
+$var2: #8BA4F9;
+$var3: #ffffff;
+$var4:rgba(31, 32, 65, 0.25); 
+
+button {
+	outline: none;
+}
+
+
+
+
+
+
+.button-smole-border1 {
+	width: 40px;
+	height: 20px;
+	color: rgba(31, 32, 65, 0.25);
+	// font-weight: 700;
+	// border-top: 2px solid $var4;
+	// border-bottom: 2px solid $var4;
+	// border-left: none;
+	// border-right: none;
+	border: 2px solid $var4;
+	background-position: 0 0, 100% 0;
+	background-repeat: no-repeat;
+	-webkit-background-size: 40px 100%;
+	-moz-background-size: 40px 100%;
+	background-size: 40px 100%;
+	// background-image: -webkit-linear-gradient(top, $var4 0%, $var4 100%), -webkit-linear-gradient(top, $var4 0%, $var4 100%);
+	// background-image: -moz-linear-gradient(top, $var4 0%, $var4 100%), -moz-linear-gradient(top, $var4 0%, $var4 100%);
+	// background-image: -o-linear-gradient(top, $var4 0%, $var4 100%), -o-linear-gradient(top, $var4 0%, $var4 100%);
+	// background-image: linear-gradient(to bottom, $var4 0%, $var4 100%), linear-gradient(to bottom, $var4 0%, $var4 100%);
+	border-radius: 10px;
+	outline: none;
+	display: inline-block;
+	text-align: center;
+	
+
+		// border-top: 2px solid $var1;
+		// border-bottom: 2px solid $var2;
+		// border-left: none;
+		// border-right: none;
+		// background-image: -webkit-linear-gradient(top, $var1 0%, $var2 100%), -webkit-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+		// background-image: -moz-linear-gradient(top, $var1 0%, $var2 100%), -moz-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+		// background-image: -o-linear-gradient(top, $var1 0%, $var2 100%), -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+		// background-image: linear-gradient(to bottom, $var1 0%, $var2 100%), linear-gradient(to bottom, #BC9CFF 0%, #8BA4F9 100%);
+		
+	
+
+}
+
+.color-style {
+	border-top: 2px solid $var1;
+	border-bottom: 2px solid $var2;
+	border-left: none;
+	border-right: none;
+	background-image: -webkit-linear-gradient(top, $var1 0%, $var2 100%), -webkit-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+	background-image: -moz-linear-gradient(top, $var1 0%, $var2 100%), -moz-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+	background-image: -o-linear-gradient(top, $var1 0%, $var2 100%), -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+	background-image: linear-gradient(to bottom, $var1 0%, $var2 100%), linear-gradient(to bottom, #BC9CFF 0%, #8BA4F9 100%);
+		
+}
+
+
+
+
+
+
+.forbutton-like {
+	background-color: #ffffff;
+	height: 18px;
+	width: 38px;
+	border-radius: 9px;
+	margin-left: -7px;
+	margin-top: -2px;
+	
+}
+// margin-left: -5px;
+
+
+
+
+.forbutton-like .material-icons {
+	font-size: 10px;
+	margin: 4px;
+	margin-left: 0px;
+	margin-top: 3.5px;
+}
+.forbutton-like span {
+	margin-right: 0px;
+	margin-top: 3.5px;
+}

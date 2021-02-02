@@ -1,5 +1,5 @@
 
-mixin toggle-paste()
+mixin toggle-paste(number_toggle)
     //- div.qqq
     //-     input#cb1.tgl.tgl-light(type = "checkbox")
     //-     label.tgl-btn(for = "cb1")
@@ -7,14 +7,19 @@ mixin toggle-paste()
     //- div.toggle-full
     //-     div.qwe sadasd
    
-
+ 
 
     div
-        input#box-toggle1.toggle(type='checkbox' checked='checked')
-        label.toggle-label(for='box-toggle1') Получать спецпредложения
-    div
-        input#box-toggle2.toggle(type='checkbox')
-        label.toggle-label(for='box-toggle2') Получать спецпредложения
+        input.toggle(type='checkbox' checked='checked' id=number_toggle)
+        label.toggle-label(for=number_toggle) Получать спецпредложения
+        
+    
+
+    
+
+        
+
+        
             
 
 

@@ -2,12 +2,17 @@ include ../../element/buttons/buttons
 include ../../element/checkbox-buttons/checkbox-buttons
 include ../../element/radio-button/radio-button
 include ../../element/toggle/toggle
+include ../../element/like-buttons/like-buttons
+include ../../element/rate-button/rate-button
+
 
 
 html
   head
     title Form Elements
+   
   body
+    +button-paste('button-long' , "ПЕРЕЙТИ К ОПЛАТЕ")
     +button-paste('button-long' , "ПЕРЕЙТИ К ОПЛАТЕ")
     br
     br
@@ -35,9 +40,26 @@ html
     +radio-button-paste()
     br
     br
-    +toggle-paste()
+    +toggle-paste('qwe')
+    br
+    +toggle-paste('asd')
+    br
+    +like-buttons(5)
     br
     br
+    +like-buttons(91)
+    br
+    br
+    +rate-button-paste(1)
+    br
+    br
+    +rate-button-paste(5)
+    br
+    br
+    +rate-button-paste(3)
+    br
+    br
+    
 
 
   
