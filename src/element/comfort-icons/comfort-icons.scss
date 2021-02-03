@@ -1,0 +1,48 @@
+.comfort-icons{
+    font-family: "Material Icons",sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+    vertical-align: middle;
+    background: linear-gradient(#BC9CFF 0%, #88a4f9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: inherit;
+    //align-items: center;
+}
+
+
+.comfort-text {
+    font-size: 14px;
+    color: rgba(31, 32, 65, 0.75);
+    //align-items: center;
+}
+
+h3 {
+    color: rgba(31, 32, 65, 0.75);
+    margin: 0px;
+}
+
+
+.smile-city {
+    display: inline-block;
+    line-height: 24px;
+}
+
+// .container-icons {
+//     height: 48px;
+// }
+
+.qwe {
+    display: inline-flex;
+    align-items: flex-start;
+    height: 68px;
+    padding-top: 20px ;
+    // border: 2px solid black;
+}

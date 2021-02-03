@@ -1,6 +1,3 @@
-//import example from './images/example.png'
-//import './elements/buttons.scss'
-//import './styles/main.scss'
 import './form-elements.scss'
 import '../../element/buttons/buttons.scss'
 import '../../element/checkbox-buttons/checkbox-buttons.scss'
@@ -11,6 +8,13 @@ import $ from 'jquery';
 import '../../element/like-buttons/like-buttons.js'
 import '../../element/like-buttons/like-buttons.scss'
 import '../../element/rate-button/rate-button.scss'
+import '../../element/comfort-icons/comfort-icons.scss'
+import '../../element/rich-checkbox-button/rich-checkbox-button.scss'
+import '../../element/expandable-checkbox/expandable-checkbox.js'
+import '../../element/expandable-checkbox/expandable-checkbox.scss'
+
+
+
 
 global.jQuery = $;
 global.$ = $;
