@@ -12,7 +12,8 @@ import '../../element/comfort-icons/comfort-icons.scss'
 import '../../element/rich-checkbox-button/rich-checkbox-button.scss'
 import '../../element/expandable-checkbox/expandable-checkbox.js'
 import '../../element/expandable-checkbox/expandable-checkbox.scss'
-
+import '../../element/dropdown/dropdown.scss'
+import '../../element/dropdown/dropdown.js'
 
 
 

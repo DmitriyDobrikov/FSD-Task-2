@@ -1,19 +1,24 @@
 mixin expandable-checkbox-paste()
-    button.expandable-checkbox1 
-        span.expandable-l EXPANDEBLE CHECHBOX LIST
-           i.material-icons star
-        div.expandable-checkboxddd
+
+    script 
+        epandable-checkbox.js
+
+    button.expandable-checkbox-button.qwe222(type='checkbox' checked='checked')
+        div.expandable-block
+            h3.expandable-h EXPANDEBLE CHECHBOX LIST
+            i.material-icons.expand-icon expand_less
+        div.expandable-checkbox-list
             div
                 input#expandable-1.expandable-checkbox(type='checkbox')
                 label.expandable-label(for='expandable-1') Завтрак
             div
-                input#expandable-2.expandable-checkbox(type='checkbox')
+                input#expandable-2.expandable-checkbox(type='checkbox' checked='checked')
                 label.expandable-label(for='expandable-2') Письменный стол
             div
-                input#expandable-3.expandable-checkbox(type='checkbox')
+                input#expandable-3.expandable-checkbox(type='checkbox' checked='checked')
                 label.expandable-label(for='expandable-3') Стул для кормления
             div
-                input#expandable-4.expandable-checkbox(type='checkbox')
+                input#expandable-4.expandable-checkbox(type='checkbox' checked='checked')
                 label.expandable-label(for='expandable-4') Кроватка
             div
                 input#expandable-5.expandable-checkbox(type='checkbox')
@@ -21,10 +26,3 @@ mixin expandable-checkbox-paste()
             div
                 input#expandable-6.expandable-checkbox(type='checkbox')
                 label.expandable-label(for='expandable-6') Шампунь
-
-          
-
-
-
-
-

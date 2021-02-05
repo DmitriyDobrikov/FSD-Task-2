@@ -1,0 +1,44 @@
+mixin dropdown-people-paste()
+    div.people
+        div.guest-quantity-block
+            div.guest-quantity-text
+                span.guest-quantity Сколько гостей
+            div.dropdown-icon-block
+                i.material-icons.dropdown-icon expand_more
+        div.dropdown-list
+            div.dropdown-people-list-item.adults
+                div.people-type-block
+                    span.people-type ВЗРОСЛЫЕ
+                div.quantity-block
+                    button.quantity-change.minus -
+                    span.quantity-number 0
+                    button.quantity-change.plus +
+            div.dropdown-people-list-item.children
+                div.people-type-block
+                    span.people-type ДЕТИ
+                div.quantity-block
+                    button.quantity-change.minus -
+                    span.quantity-number 0
+                    button.quantity-change.plus +
+            div.dropdown-people-list-item.babies
+                div.people-type-block
+                    span.people-type МЛАДЕНЦЫ
+                div.quantity-block
+                    button.quantity-change.minus -
+                    span.quantity-number 0
+                    button.quantity-change.plus +
+            div.dropdown-people-add
+                div.clean-dropdown-block
+                    span.clean-dropdown ОЧИСТИТЬ
+                div.add-dropdown-block
+                    span.add-dropdown ПРИМЕНИТЬ
+
+
+
+
+
+//- button.expandable-checkbox-button.qwe222(type='checkbox' checked='checked')
+//-         div.expandable-block
+//-             h3.expandable-h EXPANDEBLE CHECHBOX LIST
+//-             i.material-icons.expand-icon expand_less
+//-         div.expandable-checkbox-list плюсики                    24

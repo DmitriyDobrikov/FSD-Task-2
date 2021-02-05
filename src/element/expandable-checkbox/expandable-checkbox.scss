@@ -1,9 +1,88 @@
-// .rrr:hover {
-//     display: none;
-// }
-.active {
-    display: none;
-}
 .expandable-label {
     color: black;
+}
+
+.expandable-checkbox-button {
+    background: none;
+	border: none;
+}
+
+
+
+.expandable-checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	&+.expandable-label {
+		display: inline-flex;
+		align-items: center;
+		user-select: none;
+		color: rgba(31, 32, 65, 0.5);
+		width: 270px;
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			flex-shrink: 0;
+			flex-grow: 0;
+			border: 1px solid #ADB5BD;
+			border-radius: 4px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 50% 50%;
+			margin-right: 9px;
+		}
+
+	}
+	&:checked+.expandable-label::before {
+		border-color: #BC9CFF;
+		background-image: url('marker.svg');
+		
+	// font-family: "Material Icons",sans-serif;
+    // font-weight: normal;
+    // font-style: normal;
+    // text-decoration: none;
+    // text-transform: lowercase;
+    // vertical-align: middle;
+    // background: linear-gradient(#BC9CFF 22%, #88a4f9 78%);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // content: "checked";
+    // display: block;
+    // width: 30%;
+    // font-weight: bolder;
+	}
+
+}
+.expandable-label {
+	width: 190px;
+	margin-top: 10px;
+}
+
+.expandable-label:hover:before {
+	border-color: #BC9CFF;
+}
+
+.expandable-block {
+	height: 25px;
+	line-height: 25px;
+}
+
+.expand-icon {
+	line-height: normal;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 30px;
+}
+
+.expandable-h {
+	line-height: normal;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.expandable-label-checked::before {
+	border-color: #BC9CFF;
+	background-image: url('marker.svg');
 }

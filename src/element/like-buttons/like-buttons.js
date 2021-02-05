@@ -7,11 +7,11 @@ for (let index = 0; index < i.length; index++) {
 
 
 
-let parentId
+// let parentId
 
-$('.like').mouseenter(function(){
-  parentId = this.id
-});
+// $('.like').mouseenter(function(){
+//   parentId = this.id
+// });
 
 
 
