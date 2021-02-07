@@ -1,0 +1,55 @@
+#polzunok {
+    width: 266px;
+    height: 6px;
+    margin-top: 0;
+}
+
+.slider-text-block {
+    width: 266px;
+}
+
+.ui-slider {
+	position: relative;
+	text-align: left;
+	
+	border-radius: 6px;
+
+}
+
+.ui-slider .ui-slider-handle {
+	height: 12px;
+	width: 12px;
+	border-radius: 12px;
+    outline: none;
+    border: 2px solid #ffffff;
+    //border-color: #ffffff;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    margin-top: -1px;
+
+}
+.ui-slider .ui-slider-range {
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+#result-polzunok {
+    // text-align: right;
+    // width: 266px;
+    margin-bottom: 23px;
+    color: rgba(31, 32, 65, 0.5);
+    font-size: 12px;
+    display: inline-block;
+}
+
+
+.slider-title {
+    display: inline-block;
+    width: 50%;
+    //background: red;
+}
+
+.rezult-polzunok {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    //background: blue;
+}

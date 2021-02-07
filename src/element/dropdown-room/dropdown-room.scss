@@ -1,0 +1,140 @@
+.room {
+    width: 266px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 2px;
+}
+
+.room-quantity-block {
+    height: 44px;
+    line-height: 44px;
+}//
+
+
+.room-quantity {
+    font-size: 14px;
+    line-height: normal;
+	display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-left: 7px;
+    color: rgba(31, 32, 65, 0.75);;
+}//
+
+.dropdown-room-icon-block {
+    width: 20%;
+    display: inline-block;
+    text-align: right;
+}//
+
+.room-quantity-text {
+    width: 80%;
+    display: inline-block;
+    text-align: left;
+}//
+
+.dropdown-room-icon {
+    margin-top: 10px;
+    line-height: normal;
+	display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    margin-right: 5px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.quantity-change {
+    height: 30px;
+    width: 30px;
+    // line-height: normal;
+	// display: inline-block;
+    // vertical-align: middle;
+    text-align: center;
+    border-radius: 15px;
+    background: none;
+    //line-height: 30px;
+    //padding-bottom: 5px;
+    // padding: 10px;
+    // padding: 10px;
+    // padding: 10px;
+}
+
+.room-type {
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+
+.dropdown-room-list-item {
+    margin: 7px;
+}
+
+.dropdown-room-list {
+    height: 119px;
+    border-top: 1px solid rgba(31, 32, 65, 0.5);
+    display: none;
+}
+
+.quantity-number {
+    margin: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.quantity-block {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+}
+
+.room-type-block {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+}
+
+
+.minus {
+    color: rgba(31, 32, 65, 0.25);
+    border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.plus {
+    color: rgba(31, 32, 65, 0.5);
+    border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.add-dropdown {
+    font-size: 14px;
+    color: #BC9CFF;
+    font-weight: 700;
+    margin-right: 7px;
+}
+
+
+.clean-dropdown {
+    font-size: 14px;
+    color: #BC9CFF;
+    font-weight: 700;
+    margin-left: 17px;
+}
+
+
+
+.clean-dropdown-block {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+}
+
+.add-dropdown-block {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+}
+
+.dropdown-people-add {
+    margin-top: 30px;
+}

@@ -35,6 +35,9 @@
   },
   "dependencies": {
     "jquery": "^3.5.1",
-    "material-design-icons": "^3.0.1"
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-slider": "^1.12.1",
+    "material-design-icons": "^3.0.1",
+    "rangeslider.js": "^2.3.3"
   }
 }

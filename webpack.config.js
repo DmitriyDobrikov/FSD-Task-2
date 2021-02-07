@@ -4,6 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const webpack = require('webpack')
 
+// require('webpack-jquery-ui');
+// require('webpack-jquery-ui/css');
+
 const PATHS = {
     src: path.join(__dirname, './src'),
     dist: path.join(__dirname, './dist'),

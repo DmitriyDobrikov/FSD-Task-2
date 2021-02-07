@@ -1,0 +1,33 @@
+mixin dropdown-room-paste()
+    div.room
+        div.room-quantity-block
+            div.room-quantity-text
+                span.room-quantity Количество комнат
+            div.dropdown-room-icon-block
+                i.material-icons.dropdown-room-icon expand_more
+        div.dropdown-room-list
+            div.dropdown-room-list-item.bedroom
+                div.room-type-block
+                    span.room-type СПАЛЬНИ
+                div.quantity-block
+                    button.quantity-change.minus -
+                    span.quantity-number 2
+                    button.quantity-change.plus +
+            div.dropdown-room-list-item.bed
+                div.room-type-block
+                    span.room-type КРОВАТИ
+                div.quantity-block
+                    button.quantity-change.minus -
+                    span.quantity-number 2
+                    button.quantity-change.plus +
+            div.dropdown-room-list-item.bathroom
+                div.room-type-block
+                    span.room-type ВЗРОСЛЫЕ
+                div.quantity-block
+                    button.quantity-change.minus -
+                    span.quantity-number 0
+                    button.quantity-change.plus +
+
+
+
+

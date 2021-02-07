@@ -6,17 +6,12 @@ for (let index = 0; index < dropdownPeopleList.length; index++) {
 
 for(j = 0; j < dropdownPeopleList.length; j++) {
 
-
     let dropdownPeopleParent = document.querySelector('#' + dropdownPeopleList[j].id);
     let dropdownPeopleId = document.querySelector('#' + dropdownPeopleList[j].id + ' .guest-quantity-block');
     let dropdownListBlock = document.querySelector('#' + dropdownPeopleList[j].id + ' .dropdown-list');
     let dropdownIcon = document.querySelector('#' + dropdownPeopleList[j].id + ' .guest-quantity-block' + ' .dropdown-icon-block' + ' .material-icons');
     let dropdownPeopleQuantity = document.querySelector('#' + dropdownPeopleList[j].id + ' .guest-quantity-block' + ' .guest-quantity-text' + ' .guest-quantity');
     
- 
-
-
-
     dropdownPeopleId.onclick = function () {
         if (dropdownIcon.textContent == 'expand_more') {
             dropdownListBlock.style.display = 'block';
@@ -143,11 +138,10 @@ for(j = 0; j < dropdownPeopleList.length; j++) {
 //------------------------------------ Babies
 
 
-
+//------------------------------------ ПРИМЕНИТЬ
     dropdownPeopleSummAdd.onclick = function () {
         dropdownPeopleQuantity.textContent = +dropdownListAduldsNumber.textContent + +dropdownListChildrenNumber.textContent + +dropdownListBabiesNumber.textContent;
         if( +dropdownPeopleQuantity.textContent > 0){
-           // dropdownPeopleQuantity.textContent = +dropdownListAduldsNumber.textContent + +dropdownListChildrenNumber.textContent + +dropdownListBabiesNumber.textContent;
             if (+dropdownPeopleQuantity.textContent > 4) {
                 dropdownPeopleQuantity.textContent += ' гостей'
             }else if (+dropdownPeopleQuantity.textContent == 1){
@@ -159,28 +153,42 @@ for(j = 0; j < dropdownPeopleList.length; j++) {
             dropdownPeopleQuantity.textContent = 'Сколько гостей'
         }
     }
+//------------------------------------ ПРИМЕНИТЬ
 
 
+//------------------------------------ ОЧИСТИТЬ
     dropdownPeopleSummClean.onclick = function () {
-        //dropdownPeopleQuantity.textContent = +dropdownListAduldsNumber.textContent + +dropdownListChildrenNumber.textContent + +dropdownListBabiesNumber.textContent;
         dropdownPeopleQuantity.textContent = 'Сколько гостей'
         dropdownListAduldsNumber.textContent = 0;
         dropdownListChildrenNumber.textContent = 0;
         dropdownListBabiesNumber.textContent = 0;
-        // if( +dropdownPeopleQuantity.textContent > 0){
-        //     //dropdownPeopleQuantity.textContent = +dropdownListAduldsNumber.textContent + +dropdownListChildrenNumber.textContent + +dropdownListBabiesNumber.textContent;
-        //     if (+dropdownPeopleQuantity.textContent > 4) {
-        //         dropdownPeopleQuantity.textContent += ' гостей'
-        //     }else if (+dropdownPeopleQuantity.textContent == 1){
-        //         dropdownPeopleQuantity.textContent += ' гость'
-        //     }else {
-        //         dropdownPeopleQuantity.textContent += ' гостя'
-        //     }
-        // }else{
-        //     dropdownPeopleQuantity.textContent = 'Сколько гостей'
-        // }
-    }
 
+        dropdownListBabiesMinus.style.color = 'rgba(31, 32, 65, 0.25)'
+        dropdownListBabiesMinus.style.borderColor = 'rgba(31, 32, 65, 0.25)'
+        dropdownListBabiesPlus.style.color = 'rgba(31, 32, 65, 0.5)'
+        dropdownListBabiesPlus.style.borderColor = 'rgba(31, 32, 65, 0.5)'
+
+        dropdownListChildrenMinus.style.color = 'rgba(31, 32, 65, 0.25)'
+        dropdownListChildrenMinus.style.borderColor = 'rgba(31, 32, 65, 0.25)'
+        dropdownListChildrenPlus.style.color = 'rgba(31, 32, 65, 0.5)'
+        dropdownListChildrenPlus.style.borderColor = 'rgba(31, 32, 65, 0.5)'
+
+        dropdownListAduldsMinus.style.color = 'rgba(31, 32, 65, 0.25)'
+        dropdownListAduldsMinus.style.borderColor = 'rgba(31, 32, 65, 0.25)'
+        dropdownListAduldsPlus.style.color = 'rgba(31, 32, 65, 0.5)'
+        dropdownListAduldsPlus.style.borderColor = 'rgba(31, 32, 65, 0.5)'
+    }
+//------------------------------------ ОЧИСТИТЬ
+
+
+    dropdownPeopleParent.onclick = function () {
+
+        if (dropdownPeopleQuantity.textContent == 'Сколько гостей') {
+            dropdownPeopleSummClean.style.display = "none"
+        } else {
+            dropdownPeopleSummClean.style.display = "inline-block"
+        }
+    }
 
 
 }
