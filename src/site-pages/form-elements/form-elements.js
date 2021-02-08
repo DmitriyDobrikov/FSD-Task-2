@@ -20,6 +20,9 @@ import '../../element/dropdown-room/dropdown-room.scss'
 import '../../element/dropdown-room/dropdown-room.js'
 import '../../element/range-slider/range-slider.js'
 import '../../element/range-slider/range-slider.scss'
+import '../../element/pagination/pagination.js'
+import '../../element/pagination/pagination.scss'
+
 
 
 
