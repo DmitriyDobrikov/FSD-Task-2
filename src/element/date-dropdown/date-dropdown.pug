@@ -1,0 +1,47 @@
+mixin date-dropdown-paste(calendar_type)
+    
+    case calendar_type
+
+        when 'date_dropdown'
+
+            div.date-dropdown-block
+                div.input-date-block
+                    input.startDate.input-date(placeholder="ДД.ММ.ГГГГ") 
+                    input.endDate.input-date(placeholder="ДД.ММ.ГГГГ")
+                    i.material-icons.start-date-icon expand_more
+                    i.material-icons.end-date-icon expand_more
+                div.date_range
+                    div.chage-date
+                        button.clear-date.chage-date-button ОЧИСТИТЬ
+                        botton.enter-date.chage-date-button ПРИМЕНИТЬ
+
+        when "calendar"
+            div.date-dropdown-block
+                div.input-date-block
+                div.date_range.date_range_calendar
+                    div.chage-date
+                        button.clear-date.chage-date-button ОЧИСТИТЬ
+                        botton.enter-date.chage-date-button ПРИМЕНИТЬ
+        
+
+
+        when 'filter_date_dropdown'
+
+            div.date-dropdown-block
+                div.input-date-block
+                    //- input.startDate.input-date(placeholder="ДД.ММ.ГГГГ") 
+                    //- input.endDate.input-date(placeholder="ДД.ММ.ГГГГ")
+                    input.range-date(placeholder="ДД.ММ.ГГГГ")
+                    i.material-icons.range-date-icon.end-date-icon.start-date-icon expand_more
+                div.date_range.filter-date
+                    div.chage-date
+                        button.clear-date.chage-date-button ОЧИСТИТЬ
+                        botton.enter-date.chage-date-button ПРИМЕНИТЬ
+        
+        default
+            p ERROR
+            //- div.date-dropdown-block
+            //-     div.date_range
+            //-         div.chage-date
+            //-             button.clear-date.chage-date-button ОЧИСТИТЬ
+            //-             botton.enter-date.chage-date-button ПРИМЕНИТЬ

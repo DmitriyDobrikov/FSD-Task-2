@@ -1,0 +1,9 @@
+mixin text-fields-paste(type)
+
+    case type
+        when "text-field"
+            input.text-field(placeholder="Email")
+        when "date"
+            input.text-field.date-field(placeholder="ДД.ММ.ГГГГ")
+        when "subscription"
+            input.text-field.subscription(placeholder="Email")
