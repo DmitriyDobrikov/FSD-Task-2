@@ -1,0 +1,17 @@
+include ../../element/date-dropdown/date-dropdown
+include ../../element/dropdown/dropdown
+include ../../element/buttons/buttons
+
+mixin find-block()
+
+    div.find-block
+        span.find-block-title Найдём номера под ваши пожелания
+        span.come-date.find-elements-titles ПРИБЫТИЕ
+        span.leave-date.find-elements-titles ВЫЕЗД
+        span.guests.find-elements-titles ГОСТИ
+        div.find-date
+            +date-dropdown-paste('date_dropdown')
+        div.find-people
+            +dropdown-people-paste()
+        div.find-button
+            +button-paste('button-long' , "ПОДОБРАТЬ НОМЕР")

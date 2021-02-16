@@ -16,7 +16,7 @@ for(j = 0; j < dropdownPeopleList.length; j++) {
         if (dropdownIcon.textContent == 'expand_more') {
             dropdownListBlock.style.display = 'block';
             dropdownIcon.textContent = 'expand_less'
-            dropdownPeopleParent.style.height = 222 + 'px';
+            dropdownPeopleParent.style.height = 202 + 'px';
         } else {
             dropdownListBlock.style.display = 'none';         
             dropdownIcon.textContent = 'expand_more'

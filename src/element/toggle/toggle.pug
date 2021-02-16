@@ -1,5 +1,5 @@
 
-mixin toggle-paste(number_toggle)
+mixin toggle-paste(number_toggle, checked_control)
     //- div.qqq
     //-     input#cb1.tgl.tgl-light(type = "checkbox")
     //-     label.tgl-btn(for = "cb1")
@@ -10,7 +10,7 @@ mixin toggle-paste(number_toggle)
  
 
     div
-        input.toggle(type='checkbox' checked='checked' id=number_toggle)
+        input.toggle(type='checkbox' checked=checked_control id=number_toggle)
         label.toggle-label(for=number_toggle) Получать спецпредложения
         
     

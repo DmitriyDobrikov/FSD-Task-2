@@ -1,0 +1,72 @@
+// html {
+//     font-family: 'Montserrat';
+// }
+.find-block {
+    width: 380px;
+    height: 374px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.find-block-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    width: 320px;
+    height: 59px;
+    position: absolute;
+    left: 30px;
+    top: 40px;
+}
+
+.find-date {
+    position: absolute;
+    left: 30px;
+    top: 141px;
+}
+
+.find-people {
+    position: absolute;
+    left: 30px;
+    top: 225px;
+    z-index: 200;
+}
+
+.find-button {
+    position: absolute;
+    left: 30px;
+    top: 300px;
+    z-index: 99;
+}
+
+.come-date {
+    position: absolute;
+    left: 30px;
+    top: 120px;
+}
+
+.leave-date {
+    position: absolute;
+    left: 200px;
+    top: 120px;
+}
+
+.guests {
+    position: absolute;
+    left: 30px;
+    top: 205px;
+}
+
+
+.find-elements-titles {
+    font-family: 'Montserrat';
+    font-size: 12px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    //letter-spacing: 0em;
+    text-align: left;
+    height: 15px;
+}

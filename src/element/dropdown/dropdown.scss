@@ -1,9 +1,12 @@
 .people {
     //position: fixed;
-    width: 266px;
+    width: 320px;
     height: 44px;
-    border: 1px solid rgba(31, 32, 65, 0.5);
+    border: 1px solid rgba(31, 32, 65, 0.25) !important;
     border-radius: 2px;
+    background: #ffffff;
+    z-index: 999999 !important;
+    font-family: 'Montserrat';
 }
 
 .guest-quantity-block {
@@ -13,13 +16,15 @@
 
 
 .guest-quantity {
+    font-family: 'Montserrat' !important;
     font-size: 14px;
     line-height: normal;
 	display: inline-block;
     vertical-align: middle;
     margin-top: 10px;
-    margin-left: 7px;
-    color: rgba(31, 32, 65, 0.75);;
+    margin-left: 15px;
+    color: rgba(31, 32, 65, 0.75) !important;
+    font-size: 14px;
 }
 
 .dropdown-icon-block {
@@ -41,7 +46,7 @@
     vertical-align: middle;
     text-align: right;
     margin-right: 5px;
-    color: rgba(31, 32, 65, 0.75);
+    color: rgba(31, 32, 65, 0.5);
 }
 
 .quantity-change {
@@ -61,26 +66,31 @@
 }
 
 .people-type {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
-    margin-left: 15px;
+    margin-left: 8px;
+    color: rgba(31, 32, 65, 1) !important;
 }
 
 
 .dropdown-people-list-item {
     margin: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 
 .dropdown-list {
     height: 119px;
-    border-top: 1px solid rgba(31, 32, 65, 0.5);
+    border-top: 1px solid rgba(31, 32, 65, 0.25) !important;
     display: none;
+    z-index: 999999 !important;
 }
 
 .quantity-number {
     margin: 8px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
+    color: rgba(31, 32, 65, 1);
 }
 
 
@@ -108,7 +118,7 @@
 }
 
 .add-dropdown {
-    font-size: 14px;
+    font-size: 12px !important; 
     color: #BC9CFF;
     font-weight: 700;
     margin-right: 7px;
@@ -116,7 +126,7 @@
 
 
 .clean-dropdown {
-    font-size: 14px;
+    font-size: 12px !important;
     color: #BC9CFF;
     font-weight: 700;
     margin-left: 17px;
@@ -137,5 +147,6 @@
 }
 
 .dropdown-people-add {
-    margin-top: 30px;
+    margin-top: 20px !important;
+    margin-bottom: 13px;
 }

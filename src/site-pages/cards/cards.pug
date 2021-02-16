@@ -1,27 +1,18 @@
-//include ../../element/button-long/button-long
-
-html
-  head
-    title My Site
-  body
-    h1 My Site
-    p Welcome to my super lame site.
-    //include ../../element/button-long/button-long
-    //+article('Hello world')
-
-    //+article('Hello world')
+include ../../blocks/find/find
+include ../../blocks/registration/registration
+include ../../blocks/hotel-number/hotel-number
 
 
-//include ../../element/button-long/button-long.pug
 
-//head
-    title Pug
-    
-//body
-    block content 
-    p liuhoiu 
-    include ../../element/button-long/button-long.pug 
-    +article('Hello world')
 
-    +article('Hello world')
-  
+div.cards-background
+    +find-block()  
+    br
+    br
+    br
+    +registration-block()
+    br
+    br
+    br
+    br
+    +hotel-number-block()

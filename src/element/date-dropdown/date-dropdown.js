@@ -67,7 +67,8 @@ for (let index = 0; index < dropdownDateList.length; index++) {
 
       let dropdownDateCalendarFilterId = document.querySelector('#' + dropdownDateList[j].id + ' .date_range_filter');
       let clearDate = document.querySelector('#' + dropdownDateList[j].id + ' .date_range' +  ' .chage-date' + ' .clear-date')
-      
+      let enterDate = document.querySelector('#' + dropdownDateList[j].id + ' .date_range' +  ' .chage-date' + ' .enter-date')
+
       let dropdownDateCalendarOn = document.querySelector('#' + dropdownDateList[j].id + ' .input-date-block')
       let startDateIcon = document.querySelector('#' + dropdownDateList[j].id + ' .input-date-block' + ' .start-date-icon')
       let endDateIcon = document.querySelector('#' + dropdownDateList[j].id + ' .input-date-block' + ' .end-date-icon')
@@ -75,15 +76,31 @@ for (let index = 0; index < dropdownDateList.length; index++) {
       
 
       //console.log(rangeDateIcon.textContent)
-
+      let dateArray = []
       $(dropdownDateCalendarId).datepicker({
         range: 'period', // режим - выбор периода
         dateFormat: dropdownDateCalendarId.classList.contains('filter-date')?'d M':'dd.mm.yy',
         //showButtonPanel: true,
+        
         onSelect: function(dateText, inst, extensionRange) {
             // extensionRange - объект расширения
+          if (dateArray.length == 2) {
+            dateArray.pop()
+            dateArray.pop()
+          }
+          //console.log(dateArray.length)
+          
           $(dropdownStartDate).val(extensionRange.startDateText);
+          let sundayCheck = new Date($(dropdownDateCalendarId).datepicker("getDate"));  
+          dateArray.push(sundayCheck)
+       
+
+
+
           $(dropdownEndDate).val(extensionRange.endDateText);
+          // let sundayCheck1 = new Date($(dropdownDateCalendarId).datepicker("getDate"));
+          // console.log(sundayCheck1)
+
           $(dropdownRangeDate).val(`${extensionRange.startDateText} - ${extensionRange.endDateText}`);
         }
       });
@@ -95,17 +112,21 @@ for (let index = 0; index < dropdownDateList.length; index++) {
       //let toDay = $(dropdownDateCalendarId).datepicker('setDate', '+1d');
       //console.log(toDay)
       //$(dropdownRangeDate).val(toDay);
-     
+
+      
      
     
       // объект расширения (хранит состояние календаря)
-      // enterDate.onclick = function() {
-      //   var extensionRange = $('.date_range').datepicker('widget').data('datepickerExtensionRange');
-      //   if(extensionRange.startDateText) $('.startDate').val(extensionRange.startDateText);
-      //   if(extensionRange.endDateText) $('.endDate').val(extensionRange.endDateText);
-      // }
+      enterDate.onclick = function() {
+        if (dateArray.length == 2) {
+          let daysInHotel = dateArray[0].getDate() - dateArray[1].getDate()
+          daysInHotel = Math.sqrt(daysInHotel**2)
+          //alert(i)
+          enterDate.val = daysInHotel
+        }
+      }
 
-    
+      
       clearDate.onclick = function() {
         $(dropdownDateCalendarId).datepicker('setDate', [null, null]);
         $(dropdownStartDate).val("ДД.ММ.ГГГГ");

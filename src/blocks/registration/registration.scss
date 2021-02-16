@@ -1,0 +1,120 @@
+.registration-block {
+    position: relative; 
+    width: 380px;
+    height: 646px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.registration-block-title {
+    position: absolute;
+    width: 320px;
+    height: 30px;
+    left: 30px;
+    top: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.registration-block-smole-button {
+    position: absolute;
+    left: 251px;
+    top: 572px;
+}
+
+.registration-block-big-button {
+    position: absolute;
+    left: 30px;
+    top: 498px;
+}
+
+.registration-block-toggle {
+    position: absolute;
+    left: 30px;
+    top: 454px;
+}
+
+.registration-block-password {
+    position: absolute;
+    left: 30px;
+    top: 400px;
+}
+
+.registration-block-email {
+    position: absolute;
+    left: 30px;
+    top: 346px;
+}
+
+.registration-block-date {
+    position: absolute;
+    left: 30px;
+    top: 262px;
+}
+
+div.registration-block-radio-button {
+    position: absolute;
+    left: 30px;
+    top: 183px;
+}
+
+.registration-block-surname {
+    position: absolute;
+    left: 30px;
+    top: 144px;
+}
+
+.registration-block-name {
+    position: absolute;
+    left: 30px;
+    top: 90px;
+}
+
+.registration-block-date-title {
+    position: absolute;
+    width: 118px;
+    height: 15px;
+    left: 30px;
+    top: 242px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px !important;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.registration-block-email-title {
+    position: absolute;
+    width: 251px;
+    height: 15px;
+    left: 30px;
+    top: 326px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px !important;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.registration-block-have-account {
+    position: absolute;
+    width: 186px;
+    height: 18px;
+    left: 30px;
+    top: 584px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+}

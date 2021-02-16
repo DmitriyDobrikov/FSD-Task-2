@@ -1,0 +1,33 @@
+include ../../element/date-dropdown/date-dropdown
+include ../../element/dropdown/dropdown
+include ../../element/buttons/buttons
+
+mixin hotel-number-block()
+
+    div.hotel-number-block
+        div.hotel-number-block-title
+            span.hotel-numbe-title.for-icon-number №  
+            span.hotel-numbe-title.for-int-number   888
+            span.hotel-numbe-block-title.for-lux люкс
+        
+        span.hotel-number-come-date.hotel-number-elements-titles ПРИБЫТИЕ
+        span.hotel-number-leave-date.hotel-number-elements-titles ВЫЕЗД
+        
+        div.hotel-number-date
+            +date-dropdown-paste('date_dropdown')
+
+        span.hotel-number-guest.hotel-number-elements-titles гости
+        div.hotel-number-people
+            +dropdown-people-paste()
+
+
+        span.hotel-number-first-price 9 990₽ х 4 суток
+        span.hotel-number-servises Сбор за услуги: скидка 2 179₽
+        span.hotel-number-added-servises Сбор за дополнительные услуги
+        
+        span.hotel-number-price-title Итого
+        div.hotel-number-price-dashed     
+        span.hotel-number-price 2 179₽
+
+        div.hotel-number-button
+            +button-paste('button-long' , "ЗАБРОНИРОВАТЬ")

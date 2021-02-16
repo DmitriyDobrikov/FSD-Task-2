@@ -1,0 +1,31 @@
+include ../../element/buttons/buttons
+include ../../element/text-fields/text-fields
+include ../../element/radio-button/radio-button
+include ../../element/toggle/toggle
+
+mixin registration-block()
+
+    div.registration-block 
+        span.registration-block-title Регистрация аккаунта 
+        div.registration-block-name
+            +text-fields-paste("text-field", "Имя")
+        div.registration-block-surname
+            +text-fields-paste("text-field", "Фамилия")
+        div.registration-block-radio-button
+            +radio-button-paste()
+        span.registration-block-date-title дата рождения
+        div.registration-block-date
+            +text-fields-paste("date")
+        span.registration-block-email-title данные для входа на сервис
+        div.registration-block-email
+            +text-fields-paste("text-field", "Email")
+        div.registration-block-password
+            +text-fields-paste("text-field", "Пароль")
+        div.registration-block-toggle
+            +toggle-paste('toggle-id-1')
+        div.registration-block-big-button
+            +button-paste('button-long' , "ЗАРЕГЕСТРИРОВАТЬСЯ")
+        span.registration-block-have-account Уже есть аккаунт на Toxin
+        div.registration-block-smole-button
+            +button-paste('button-smole-border', 'ВОЙТИ')
+    

@@ -38,7 +38,7 @@
 .ui-datepicker tr{
     border: none;
     padding: 0px !important;
-    width: 280px !important;
+    // width: 280px !important;
 }
 
 
@@ -97,7 +97,7 @@
 }
 
 .ui-datepicker {
-    width: 320px;
+    width: 320px !important;
     height: 369px;
     border: none;
     padding: 0px;
