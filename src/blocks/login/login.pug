@@ -1,0 +1,18 @@
+include ../../element/buttons/buttons
+include ../../element/text-fields/text-fields
+
+
+mixin login-block()
+
+    div.login-block 
+        span.login-block-title Войти
+        div.login-block-email
+            +text-fields-paste("text-field", "Email")
+        div.login-block-password
+            +text-fields-paste("text-field", "Пароль")
+        div.login-block-big-button
+            +button-paste('button-long' , "ВОЙТИ")
+        span.login-block-have-account Уже есть аккаунт на Toxin
+        div.login-block-smole-button
+            +button-paste('button-smole-border', 'СОЗДАТЬ')
+    

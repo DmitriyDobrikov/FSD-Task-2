@@ -8,3 +8,6 @@ import '../../blocks/registration/registration.js'
 
 import '../../blocks/hotel-number/hotel-number.scss'
 import '../../blocks/hotel-number/hotel-number.js'
+
+import '../../blocks/login/login.scss'
+import '../../blocks/login/login.js'
