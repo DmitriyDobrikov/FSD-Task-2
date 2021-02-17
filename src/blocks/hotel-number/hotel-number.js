@@ -7,15 +7,28 @@ import '../../element/dropdown/dropdown.js'
 import '../../element/shrift/fonts.scss'
 
 
-let daysValue = document.querySelector('.hotel-number-block' + ' .hotel-number-first-price')
-let daysValue1 = document.querySelector('.hotel-number-block')
+let daysValueFirstPrice = document.querySelector('.hotel-number-block' + ' .hotel-number-first-price')
+let hotelNumberBlock = document.querySelector('.hotel-number-block')
+let daysValuePriceLast = document.querySelector('.hotel-number-block' + ' .hotel-number-price')
+let hotelNumberPriceResult = document.querySelector('.hotel-number-block' + ' .hotel-number-days-price-result')
 let daysVal = document.querySelector('.hotel-number-block' + ' .hotel-number-date' + ' .date-dropdown-block' + ' .enter-date')
-//.hotel-number-first-price
 
-daysValue1.onclick = function () {
-    //alert(daysVal.val)
-    daysValue.textContent = `9 990₽ x ${daysVal.val} суток`
 
+function spaceAdd(string) {
+    if (string.length > 3) {
+        return string.substring(0, string.length - 3) + " " + string.substr(-3, 3) + "₽"
+    }else {
+        return string + "₽"
+    }
 }
 
-//alert(daysValue.textContent)
+
+
+hotelNumberBlock.onclick = function () {
+    if (daysVal.val != undefined) {
+        daysValueFirstPrice.textContent = `9 990₽ x ${daysVal.val} суток`
+        hotelNumberPriceResult.textContent = spaceAdd(daysVal.val * 9990 + '')
+        daysValuePriceLast.textContent = spaceAdd(daysVal.val * 9990 + 300 - 2179 + '')
+    }
+}
+

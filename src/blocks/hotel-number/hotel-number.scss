@@ -87,7 +87,7 @@
 
 .hotel-number-servises {
     position: absolute;
-    width: 214px;
+    width: 314px;
     height: 24px;
     left: 31px;
     top: 293px;
@@ -196,58 +196,99 @@
 
 
 
+.hotel-number-price-block {
+    position: absolute;
+    left: 250px;
+    top: 42px;
+}
+
+.hotel-number-price-for-day {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.hotel-number-price-day {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.hotel-number-days-price-result {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    position: absolute;
+    right: 30px;
+    top: 259px;
+}
+
+.hotel-number-servis-price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    position: absolute;
+    right: 30px;
+    top: 293px;
+}
+
+.hotel-number-added-servis-price{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    position: absolute;
+    right: 30px;
+    top: 327px;
+}
 
 
-// .find-block-title {
-//     font-family: 'Montserrat';
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 24px;
-//     line-height: 29px;
-//     width: 320px;
-//     height: 59px;
-//     position: absolute;
-//     left: 30px;
-//     top: 40px;
-// }
 
-// .find-date {
-//     position: absolute;
-//     left: 30px;
-//     top: 141px;
-// }
-
-// .find-people {
-//     position: absolute;
-//     left: 30px;
-//     top: 225px;
-//     z-index: 200;
-// }
-
-// .find-button {
-//     position: absolute;
-//     left: 30px;
-//     top: 300px;
-//     z-index: 99;
-// }
-
-// .come-date {
-//     position: absolute;
-//     left: 30px;
-//     top: 120px;
-// }
-
-// .leave-date {
-//     position: absolute;
-//     left: 200px;
-//     top: 120px;
-// }
-
-// .guests {
-//     position: absolute;
-//     left: 30px;
-//     top: 205px;
-// }
+.hotel-number-servises-i {  
+    color: rgba(31, 32, 65, 0.25);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 20px;
+    position: absolute;
+    right: 110px;
+    top: 291px;
+    text-align: center;
+}
 
 
-
+.hotel-number-added-servises-i {  
+    color: rgba(31, 32, 65, 0.25);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 20px;
+    position: absolute;
+    right: 110px;
+    top: 327px;
+    text-align: center; 
+}

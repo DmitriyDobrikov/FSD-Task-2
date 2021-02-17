@@ -9,6 +9,10 @@ mixin hotel-number-block()
             span.hotel-numbe-title.for-icon-number №  
             span.hotel-numbe-title.for-int-number   888
             span.hotel-numbe-block-title.for-lux люкс
+
+        div.hotel-number-price-block
+            span.hotel-number-price-for-day 9 990₽ 
+            span.hotel-number-price-day  в сутки
         
         span.hotel-number-come-date.hotel-number-elements-titles ПРИБЫТИЕ
         span.hotel-number-leave-date.hotel-number-elements-titles ВЫЕЗД
@@ -21,13 +25,21 @@ mixin hotel-number-block()
             +dropdown-people-paste()
 
 
+        span.hotel-number-days-price-result 39 960₽
+        span.hotel-number-servis-price 0₽
+        span.hotel-number-added-servis-price 300₽
+
+
+
         span.hotel-number-first-price 9 990₽ х 4 суток
-        span.hotel-number-servises Сбор за услуги: скидка 2 179₽
+        span.hotel-number-servises Сбор за услуги: скидка 2 179₽    
+        span.hotel-number-servises-i i    
         span.hotel-number-added-servises Сбор за дополнительные услуги
+        span.hotel-number-added-servises-i i
         
         span.hotel-number-price-title Итого
         div.hotel-number-price-dashed     
-        span.hotel-number-price 2 179₽
+        span.hotel-number-price 38 081₽
 
         div.hotel-number-button
             +button-paste('button-long' , "ЗАБРОНИРОВАТЬ")

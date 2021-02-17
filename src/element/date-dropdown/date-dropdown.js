@@ -81,6 +81,7 @@ for (let index = 0; index < dropdownDateList.length; index++) {
         range: 'period', // режим - выбор периода
         dateFormat: dropdownDateCalendarId.classList.contains('filter-date')?'d M':'dd.mm.yy',
         //showButtonPanel: true,
+        startDate: 0,
         
         onSelect: function(dateText, inst, extensionRange) {
             // extensionRange - объект расширения
@@ -104,11 +105,12 @@ for (let index = 0; index < dropdownDateList.length; index++) {
           $(dropdownRangeDate).val(`${extensionRange.startDateText} - ${extensionRange.endDateText}`);
         }
       });
-      //alert(dropdownDateCalendarId.classList)
+  
 
 
       $(dropdownDateCalendarId).datepicker('setDate', ['+4d', '+8d']);
-
+      //$(dropdownEndDate).val(extensionRange.endDateText);
+     // $(dropdownStartDate).val(new Date($(dropdownDateCalendarId).datepicker( "option", "dateFormat", 'yy-mm-dd' ).datepicker('getDate')));
       //let toDay = $(dropdownDateCalendarId).datepicker('setDate', '+1d');
       //console.log(toDay)
       //$(dropdownRangeDate).val(toDay);
@@ -123,6 +125,7 @@ for (let index = 0; index < dropdownDateList.length; index++) {
           daysInHotel = Math.sqrt(daysInHotel**2)
           //alert(i)
           enterDate.val = daysInHotel
+          // alert(enterDate.val)
         }
       }
 
