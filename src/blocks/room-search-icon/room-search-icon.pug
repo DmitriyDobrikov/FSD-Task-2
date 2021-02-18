@@ -1,0 +1,32 @@
+include ../../element/date-dropdown/date-dropdown
+include ../../element/dropdown/dropdown
+include ../../element/rate-button/rate-button
+
+mixin room-search-icon-block(image_id, day_prise, number_rating, lux_class, number_comments)
+
+    div.room-search-icon-block
+
+        img.room-search-icon-image(src="", id=image_id)
+
+        div.room-search-icon-block-title
+            span.hotel-numbe-title.for-icon-number №  
+            span.hotel-numbe-title.for-int-number=image_id
+            case lux_class
+                when 'lux'
+                    span.hotel-numbe-block-title.for-lux люкс
+                default 
+                    span.hotel-numbe-block-title.for-lux
+
+        div.room-search-icon-price-block
+            span.hotel-number-price-for-day=day_prise
+                span ₽
+            span.hotel-number-price-day  в сутки
+        
+        div.room-search-icon-line
+
+        div.room-search-icon-rate
+            +rate-button-paste(number_rating)
+
+        div.room-search-icon-comment-block
+            span.hotel-number-price-for-day=number_comments
+            span.hotel-number-price-day.comment-word  Отзывов

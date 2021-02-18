@@ -24,6 +24,20 @@ for(item = 0; item < i.length; item++) {
   let likeStyle = document.querySelector('#' + i[item].id  + ' .forbutton-like' + ' .likes-number');
   let likeStyleChecked = document.querySelector('#' + i[item].id  + ' .forbutton-like');
   let counter = +likesNumber.textContent;
+  let addedLike = like.classList.contains('add')
+
+  if (addedLike) {
+    $(like).ready(function(){ // функция будет выполнена при полной загрузке страницы
+      //counter++;
+      heart.textContent = 'favorite'
+      heart.style.color = '#BC9CFF';
+      likeStyle.style.color = '#BC9CFF';
+      likeStyleChecked.style.marginLeft = -5 + 'px';
+      like.classList.add("color-style");
+      likesNumber.textContent = counter;
+      like.classList.toggle('added');
+    });
+  }
 
   like.onclick = function () {
     

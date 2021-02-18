@@ -108,9 +108,16 @@ module.exports = {
             },
 
             //Изображения
+            // {
+            //     test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+            //     type: 'asset/resource',
+            // },
+
             {
-                test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-                type: 'asset/resource',
+              test: /\.(ico|gif|png|jpg|jpeg)$/i,
+              //loader: 'file-loader',
+              type: 'asset/resource',
+              //include: [path.resolve(PATHS.src, 'images')],
             },
 
             // шрифты и SVG

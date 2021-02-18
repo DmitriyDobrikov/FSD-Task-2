@@ -238,7 +238,7 @@
 .input-date {
     width: 150px;
     height: 44px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid rgba(31, 32, 65, 0.25) !important;
     border-radius: 4px;
     outline: none;
     padding-left: 15px;
@@ -296,7 +296,7 @@
     width: 266px;
     height: 44px;
     background: #FFFFFF;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid rgba(31, 32, 65, 0.25) !important;
     border-radius: 4px;
     font-family: "Montserrat";
     font-size: 14px;
@@ -314,3 +314,7 @@
     left: 236px;
     color: rgba(31, 32, 65, 0.5);
 }
+
+// .ui-datepicker {
+//     border: 1px solid rgba(31, 32, 65, 0) !important;
+// }

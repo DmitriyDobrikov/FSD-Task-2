@@ -2,22 +2,30 @@ include ../../blocks/find/find
 include ../../blocks/registration/registration
 include ../../blocks/hotel-number/hotel-number
 include ../../blocks/login/login
+include ../../blocks/room-search-icon/room-search-icon
+include ../../element/date-dropdown/date-dropdown
 
 
 
 div.cards-background
-    +find-block()  
-    br
-    br
-    br
-    +registration-block()
-    br
-    br
-    br
-    br
-    +hotel-number-block()
-    brbr 
-    br
-    br
-    br
-    +login-block()
+
+    div.cards-find-block
+        +find-block() 
+
+    div.cards-registration-block
+        +registration-block()
+
+    div.cards-hotel-number-block
+        +hotel-number-block()
+
+    div.cards-login-block
+        +login-block()
+
+    div.cards-room-search-icon-block-lux
+        +room-search-icon-block('888', '9 990', 5, 'lux', 145)
+ 
+    div.cards-room-search-icon-block
+        +room-search-icon-block('840', '9 900', 4, '', 65)   
+
+    div.cards-calendar 
+        +date-dropdown-paste('calendar')

@@ -1,17 +1,50 @@
-$font-size: 40px;
-$font-color: #0000F0;
-
-html {
-    font-family: "Montserrat";
-    font-size: $font-size;
-    color: $font-color;
-}
-
-p {
-    color: red;
-}
 .cards-background {
-    background-color: #E5E5E5;
+    background-color: #F4F4F6;
     width: 1440px;
-    height: 4000px;
+    height: 1350px;
+    position: relative;
+    padding: 0px;
+}
+
+
+.cards-find-block {
+    position: absolute;
+    left: 140px;
+    top: 150px;
+}
+
+.cards-registration-block {
+    position: absolute;
+    left: 140px;
+    top: 564px; 
+}
+
+.cards-hotel-number-block {
+    position: absolute;
+    left: 560px;
+    top: 151px;
+}
+
+.cards-login-block {
+    position: absolute;
+    left: 560px;
+    top: 701px; 
+}
+
+.cards-room-search-icon-block-lux {
+    position: absolute;
+    left: 980px;
+    top: 559.5px;
+}
+
+.cards-room-search-icon-block {
+    position: absolute;
+    left: 980px;
+    top: 856.5px;
+}
+
+.cards-calendar {
+    position: absolute;
+    left: 980px;
+    top: 106px;    
 }
