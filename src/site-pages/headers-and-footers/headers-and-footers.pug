@@ -1,27 +1,25 @@
-//include ../../element/button-long/button-long
+//- include ../../element/button-long/button-long
+include ../../blocks/header-cite/header-cite
+include ../../blocks/footer-widgets/footer-widgets
+
 
 html
   head
-    title My Site
+    title Headers&Footers
   body
     h1 My Site
     p Welcome to my super lame site.
-    //include ../../element/button-long/button-long
-    //+article('Hello world')
+    +header-cite('init', 'Юлий Цезарь')
+    br
+    br
+    br
+    +header-cite('not init')
+    br
+    br
+    br
+    br
+    br
+    +footer-widgets()
 
-    //+article('Hello world')
 
-
-//include ../../element/button-long/button-long.pug
-
-//head
-    title Pug
-    
-//body
-    block content 
-    p liuhoiu 
-    include ../../element/button-long/button-long.pug 
-    +article('Hello world')
-
-    +article('Hello world')
   

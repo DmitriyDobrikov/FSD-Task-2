@@ -24,219 +24,98 @@ include ../../element/comment/comment
 
 
 
-html
-  head
-    title Form Elements
+div.form-elements-block
    
-  body
-    +button-paste('button-long' , "ПЕРЕЙТИ К ОПЛАТЕ")
-    +button-paste('button-long' , "ПЕРЕЙТИ К ОПЛАТЕ")
-    br
-    br
-    +button-paste('button-smole', 'CLICK ME')
-    br
-    br
-    +button-paste('button-smole-on', 'CLICK ME')
-    br
-    br
-    +button-paste('button-smole-border', 'CLICK ME')
-    br
-    br
-    +button-paste('button-smole-border-on', 'CLICK ME')
-    br
-    br
-    +button-paste('button-smole-without-border', 'CLICK ME')
-    br
-    br
-    +button-paste('button-smole-without-border-on', 'CLICK ME')
-    br
-    br
-    +checkbox-paste()
-    br
-    br
-    +radio-button-paste()
-    br
-    br
-    +toggle-paste('qwe')
-    br
-    +toggle-paste('asd')
-    br
-    +like-buttons(5, "add")
-    br
-    br
-    +like-buttons(91)
-    br
-    br
-    +rate-button-paste(5)
-    br
-    br
-    +rate-button-paste(3)
-    br
-    br
-    +comfort-icons-paste()
-    br
-    br
-    +rich-checkbox-paste()
-    br
-    br
-    +expandable-checkbox-paste()
-    br
-    br
-    br
-    br
-    br
-    br
-    div zdsrgz
-    br
-    br
-    br
-    br
-    br
-    br
-    div zdsrgz
-    +expandable-checkbox-paste()
-    br
-    br
-    br
-    br
-    br
-    
-    br
-    br
-    br
-    br
-    +dropdown-people-paste()
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    +dropdown-people-paste()
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    +dropdown-room-paste()
-    br
-    br
-    br
-    br
-    br
-    +dropdown-room-paste()
-    br
-    br
-    br
-    +range-slider-paste("RANGE SLIDER")
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    +pagination-paste()
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    +date-dropdown-paste('date_dropdown')
-    br
-    br
-    br
-    +date-dropdown-paste('date_dropdown')
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    +date-dropdown-paste('filter_date_dropdown')
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    +date-dropdown-paste('calendar')
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    br
-    +text-fields-paste("date")
-    br
-    +text-fields-paste("text-field", "Имя")
-    br
-    +text-fields-paste("subscription", "Email")
-    br
-    br
-    br
-    br
-    br
-    br
-    +bullet-list-paste()
-    br
-    br
-    br
-    br
-    br
-    +comment(12, "add")
-    br
+
+
+    div.form-elements-range-slider
+      +range-slider-paste("RANGE SLIDER")
+    div.form-elements-log-button
+      +button-paste('button-long' , "ПЕРЕЙТИ К ОПЛАТЕ")
+    div.form-elements-button-smole
+      +button-paste('button-smole', 'CLICK ME')
+    div.form-elements-button-smole-on
+      +button-paste('button-smole-on', 'CLICK ME')
+    div.form-elements-button-smole-border
+      +button-paste('button-smole-border', 'CLICK ME')
+    div.form-elements-button-smole-border-on
+      +button-paste('button-smole-border-on', 'CLICK ME')
+    div.form-elements-button-smole-without-border
+      +button-paste('button-smole-without-border', 'CLICK ME')
+    div.form-elements-button-smole-without-border-on
+      +button-paste('button-smole-without-border-on', 'CLICK ME')
+    div.form-elements-pagination
+      +pagination-paste()
+
+
+
+    div.form-elements-checkbox
+      +checkbox-paste()
+    div.form-elements-radio-button
+      +radio-button-paste()
+    div.form-elements-toggle-on
+      +toggle-paste('qwe', 'checked')
+    div.form-elements-toggle
+      +toggle-paste('asd')
+    div.form-elements-like-buttons-on
+      +like-buttons(12, "add")
+    div.form-elements-like-buttons
+      +like-buttons(2)
+    div.form-elements-rate-button-4
+      +rate-button-paste(5)
+    div.form-elements-rate-button-5
+      +rate-button-paste(3)
+
+
+
+
+
+
+    div.form-elements-text-fields
+      +text-fields-paste("date")
+    div.form-elements-text-fields
+      +text-fields-paste("text-field", "Имя")
+
+
+    div.form-elements-date-dropdown
+      +date-dropdown-paste('date_dropdown')
+    div.form-elements-date-dropdown
+      +date-dropdown-paste('date_dropdown')
+    div.form-elements-filter-date-dropdown
+      +date-dropdown-paste('filter_date_dropdown')
+    //div.form-elements-date-dropdown
+      +date-dropdown-paste('calendar')
+
+
+    div.form-elements-text-fields
+      +text-fields-paste("subscription", "Email")
+
+
+    div.form-elements-dropdown-room-close
+      +dropdown-room-paste()
+    div.form-elements-dropdown-room-open
+      +dropdown-room-paste()
+    div.form-elements-dropdown-people-not-enter
+      +dropdown-people-paste()
+    div.form-elements-dropdown-people-enter
+      +dropdown-people-paste()
+
+
+
+
+
+
+    div.form-elements-expandable
+      +expandable-checkbox-paste()
+    div.form-elements-rich-checkbox
+      +rich-checkbox-paste()
+    div.form-elements-bullet-list
+      +bullet-list-paste()
+
+
+
+
+    div.form-elements-comment
+      +comment(12, "add")
+    div.form-elements-comfort-icons
+      +comfort-icons-paste()

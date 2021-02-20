@@ -1,0 +1,41 @@
+include ../../element/buttons/buttons
+
+
+
+mixin header-cite(header_type, user_name)
+    header.header-block
+
+        
+        img.header-logo-img(src="")
+        
+        //src={require('../../img/video/mainstream.mp4')}
+  
+        nav.header-nav-panel.links-panel
+            a.header-links.nav-links.nav-links-bold(href="") О нас
+           
+            a.header-links.nav-links.link-and-icon(href="")  Услуги
+            //- span.material-icons expand_more
+            a.header-links.nav-links(href="") Вакансии
+            a.header-links.nav-links(href="") Новости
+            a.header-links.nav-links.link-and-icon(href="") Соглашения
+            //span.material-icons.icon-nav expand_more
+           
+            
+
+
+            //nav.header-nav-panel.header-nav-buttons
+
+            if header_type == 'not init'
+                a.header-links.nav-links(href="") 
+                    +button-paste('button-smole-border-header', 'ВОЙТИ')
+                a.header-links.nav-links.header-nav-buttons(href="")
+                    +button-paste('button-header' , "ЗАРЕГЕСТРИРОВАТЬСЯ")
+
+            if header_type == 'init'
+                span.user-name-border.header-links.nav-links
+                a.header-links.nav-links.header-nav-buttons.header-user-name(href="")=user_name
+            
+
+
+
+

@@ -1,0 +1,176 @@
+@import '../../element/buttons/buttons.scss';
+
+
+
+
+.header-block {
+    min-height: 70px;
+    background-color: #ffffff;
+    min-width: 320px;
+
+    	/* Включаем режим Flexbox. */
+	  display: flex; 
+	
+  	/* Распределяем элементы внутри шапки */
+	  justify-content: space-between;
+
+	  /* Выравниваем элементы вертикально по центру. */
+	  align-items: center;
+}
+
+
+.header-links {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.link-and-icon {
+  margin-right: 34px;
+}
+
+
+
+.header-logo-img {
+  margin: 10px;
+  width: 105.69px;
+  margin-left: 140px !important;
+}
+
+
+
+.header-nav-buttons {
+  margin-right: 140px;
+}
+
+
+
+
+
+
+.nav-links {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+  vertical-align: middle;
+  position: relative;
+}
+
+.links-panel {
+  position: relative;
+  text-align: center;
+}
+
+.link-and-icon::after {
+  content: "expand_more";
+  font-family: "Material Icons";
+  font-size: 24px;
+  position: absolute;
+  top: 2px;
+  right: -24px;
+}
+
+.header-nav-panel {
+  margin: 10px;
+}
+
+
+
+
+@media (max-width: 1250px){
+
+  .header-links {
+    margin: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .header-logo-img {
+    margin-left: 5% !important;
+  }
+
+  .link-and-icon {
+    margin-right: 29px;
+  }
+
+  .header-nav-buttons {
+    margin-right: 70px;
+  }
+
+  .link-and-icon {
+    margin-right: 34px !important;
+  }
+  
+}
+
+
+@media (max-width: 1000px){
+  .header-block{
+      /* Меняем оси шапки, делая её вертикальной. */
+    flex-direction: column;
+    
+      /* Выравнивание элементов шапки с начала (по левому краю). */
+    align-items: center;
+  }
+
+  .header-nav-panel {
+    align-items: center;
+  }
+
+  .header-links {
+    margin: 10px;
+  }
+
+  .link-and-icon {
+    margin-right: 26px;
+  }
+
+  .header-logo-img {
+    margin: 10px !important;
+  }
+
+  .header-nav-buttons {
+    margin: 10px;
+  }
+
+  .link-and-icon {
+    margin-right: 44px !important;
+  }
+  
+
+}
+
+
+
+
+
+@media (min-width: 1250px){
+  .header-nav-buttons {
+    margin-right: 140px;
+  }
+  .user-name-border {
+    margin-left: 44px;
+  }
+
+  .link-and-icon {
+    margin-right: 44px !important;
+  }
+
+}
+
+.nav-links-bold {
+  font-weight: bold;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+
+
+.user-name-border {
+  width: 0px;
+  height: 30px;
+  border: 0.5px solid rgba(31, 32, 65, 0.1);
+  margin-left: 44px;
+}

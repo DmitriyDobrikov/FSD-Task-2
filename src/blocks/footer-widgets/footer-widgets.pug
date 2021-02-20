@@ -1,0 +1,49 @@
+include ../../element/buttons/buttons
+include ../../element/text-fields/text-fields
+
+
+mixin footer-widgets()
+    footer.footer-block
+
+        div.footer-logo
+            img.footer-logo-img(src="")
+            span.footer-logo-text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+        
+
+  
+        nav.footer-nav-panel
+            a.header-links.nav-links.nav-links-bold(href="") НАВИГАЦИЯ        
+            a.header-links.nav-links(href="") О нас
+            a.header-links.nav-links(href="") Новости
+            a.header-links.nav-links(href="") Служба поддержки
+            a.header-links.nav-links(href="") Услуги
+
+
+        nav.footer-nav-panel
+            a.header-links.nav-links.nav-links-bold(href="") О НАС        
+            a.header-links.nav-links(href="") О сервисе
+            a.header-links.nav-links(href="") Наша команда
+            a.header-links.nav-links(href="") Вакансии
+            a.header-links.nav-links(href="") Инвесторы
+
+        nav.footer-nav-panel
+            a.header-links.nav-links.nav-links-bold(href="") СЛУЖБА ПОДДЕРЖКИ           
+            a.header-links.nav-links(href="") Соглашения
+            a.header-links.nav-links(href="") Сообщества
+            a.header-links.nav-links(href="") Связь с нами
+
+
+        nav.footer-nav-panel.subscription-nav
+            a.header-links.nav-links.nav-links-bold(href="") ПОДПИСКА         
+            a.header-links.nav-links(href="")  Получайте специальные предложения и новости сервиса
+            //a.header-links.nav-links.footer-text-field(href="") 
+            +text-fields-paste("subscription", "Email")
+
+
+    div.footer-copyright
+        span.footer-copyright-text Copyright © 2018 Toxin отель. Все права зачищены.
+
+        nav.footer-copyright-brands 
+            div.copyright-icons.footer-widget-twitter(href="")
+            div.copyright-icons.footer-widget-facebook(href="")
+            div.copyright-icons.footer-widget-instagram(href="")
