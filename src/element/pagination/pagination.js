@@ -3,7 +3,7 @@ import '../../../node_modules/simple-pagination/simplePagination.css'
 
 let prevPageIcon = document.querySelector('.light-pagination')
 let qwerty = document.querySelectorAll('.page-link')
-
+let paginationVariants = document.querySelector('.pagination-variants')
 
 
 
@@ -26,8 +26,12 @@ $(function() {
 
 
 
+
+
 prevPageIcon.onclick = function () {
     let i = $('.light-pagination').pagination('getCurrentPage')
+    paginationVariants.textContent = `${i  > 1? (i - 1)*12 : i} - ${i*12} из 100+ вариантов аренды`
+     
 
     if (i == 1) {
         $('.light-pagination').pagination({
@@ -67,4 +71,6 @@ prevPageIcon.onclick = function () {
     }
     
 }
+
+
 

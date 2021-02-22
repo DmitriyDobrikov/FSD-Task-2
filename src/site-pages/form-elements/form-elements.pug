@@ -22,100 +22,142 @@ include ../../element/comment/comment
 
 
 
+html
+  head
+    title Form Elements
+  body.ui-kit-body
 
 
-div.form-elements-block
-   
+    div.form-elements-block
+    
+      img.ui-kit-logo-icon(src="", alt="")
 
-
-    div.form-elements-range-slider
-      +range-slider-paste("RANGE SLIDER")
-    div.form-elements-log-button
-      +button-paste('button-long' , "ПЕРЕЙТИ К ОПЛАТЕ")
-    div.form-elements-button-smole
-      +button-paste('button-smole', 'CLICK ME')
-    div.form-elements-button-smole-on
-      +button-paste('button-smole-on', 'CLICK ME')
-    div.form-elements-button-smole-border
-      +button-paste('button-smole-border', 'CLICK ME')
-    div.form-elements-button-smole-border-on
-      +button-paste('button-smole-border-on', 'CLICK ME')
-    div.form-elements-button-smole-without-border
-      +button-paste('button-smole-without-border', 'CLICK ME')
-    div.form-elements-button-smole-without-border-on
-      +button-paste('button-smole-without-border-on', 'CLICK ME')
-    div.form-elements-pagination
-      +pagination-paste()
-
-
-
-    div.form-elements-checkbox
-      +checkbox-paste()
-    div.form-elements-radio-button
-      +radio-button-paste()
-    div.form-elements-toggle-on
-      +toggle-paste('qwe', 'checked')
-    div.form-elements-toggle
-      +toggle-paste('asd')
-    div.form-elements-like-buttons-on
-      +like-buttons(12, "add")
-    div.form-elements-like-buttons
-      +like-buttons(2)
-    div.form-elements-rate-button-4
-      +rate-button-paste(5)
-    div.form-elements-rate-button-5
-      +rate-button-paste(3)
+      div.form-elements-range-slider
+        +range-slider-paste("RANGE SLIDER")
+      div.form-elements-log-button
+        +button-paste('button-long' , "ПЕРЕЙТИ К ОПЛАТЕ")
+      div.form-elements-button-smole
+        +button-paste('button-smole', 'CLICK ME')
+      div.form-elements-button-smole-on
+        +button-paste('button-smole-on', 'CLICK ME')
+      div.form-elements-button-smole-border
+        +button-paste('button-smole-border', 'CLICK ME')
+      div.form-elements-button-smole-border-on
+        +button-paste('button-smole-border-on', 'CLICK ME')
+      div.form-elements-button-smole-without-border
+        +button-paste('button-smole-without-border', 'CLICK ME')
+      div.form-elements-button-smole-without-border-on
+        +button-paste('button-smole-without-border-on', 'CLICK ME')
+      div.form-elements-pagination
+        +pagination-paste()
 
 
 
+      div.form-elements-checkbox
+        +checkbox-paste()
+      div.form-elements-radio-button
+        +radio-button-paste()
+      div.form-elements-toggle-on
+        +toggle-paste('qwe', 'checked')
+      div.form-elements-toggle
+        +toggle-paste('asd')
+      div.form-elements-like-buttons-on
+        +like-buttons(12, "add")
+      div.form-elements-like-buttons
+        +like-buttons(2)
+      div.form-elements-rate-button-4
+        +rate-button-paste(4)
+      div.form-elements-rate-button-5
+        +rate-button-paste(5)
 
 
 
-    div.form-elements-text-fields
-      +text-fields-paste("date")
-    div.form-elements-text-fields
-      +text-fields-paste("text-field", "Имя")
+      div.form-elements-dropdown-people-not-enter-top
+        +dropdown-people-paste()
 
 
-    div.form-elements-date-dropdown
-      +date-dropdown-paste('date_dropdown')
-    div.form-elements-date-dropdown
-      +date-dropdown-paste('date_dropdown')
-    div.form-elements-filter-date-dropdown
-      +date-dropdown-paste('filter_date_dropdown')
-    //div.form-elements-date-dropdown
-      +date-dropdown-paste('calendar')
-
-
-    div.form-elements-text-fields
-      +text-fields-paste("subscription", "Email")
-
-
-    div.form-elements-dropdown-room-close
-      +dropdown-room-paste()
-    div.form-elements-dropdown-room-open
-      +dropdown-room-paste()
-    div.form-elements-dropdown-people-not-enter
-      +dropdown-people-paste()
-    div.form-elements-dropdown-people-enter
-      +dropdown-people-paste()
+      div.form-elements-text-fields-date
+        +text-fields-paste("date")
+      div.form-elements-text-fields-name
+        +text-fields-paste("text-field", "Имя")
+      div.form-elements-text-fields-name-focus
+        +text-fields-paste("text-field", "Имя")
 
 
 
 
+    
+      div.form-elements-date-dropdown
+        +date-dropdown-paste('date_dropdown')
+      div.form-elements-filter-date-dropdown
+        +date-dropdown-paste('filter_date_dropdown')
 
 
-    div.form-elements-expandable
-      +expandable-checkbox-paste()
-    div.form-elements-rich-checkbox
-      +rich-checkbox-paste()
-    div.form-elements-bullet-list
-      +bullet-list-paste()
+      div.form-elements-text-fields
+        +text-fields-paste("subscription", "Email")
+
+
+      div.form-elements-dropdown-room-close
+        +dropdown-room-paste()
+      div.form-elements-dropdown-room-open
+        +dropdown-room-paste()
+      div.form-elements-dropdown-people-not-enter
+        +dropdown-people-paste()
+      div.form-elements-dropdown-people-enter
+        +dropdown-people-paste()
 
 
 
 
-    div.form-elements-comment
-      +comment(12, "add")
-    div.form-elements-comfort-icons
-      +comfort-icons-paste()
+
+
+      div.form-elements-expandable
+        +expandable-checkbox-paste('EXPANDEBLE CHECHBOX LIST', 'expand_more')
+      div.form-elements-expandable-close
+        +expandable-checkbox-paste('EXPANDEBLE CHECHBOX LIST', 'expand_less')
+      div.form-elements-rich-checkbox
+        +rich-checkbox-paste()
+      div.form-elements-bullet-list
+        +bullet-list-paste()
+
+
+
+
+      div.form-elements-comment
+        +comment(12, "add")
+      div.form-elements-comfort-icons
+        +comfort-icons-paste()
+
+
+
+
+      span.element-titles.text-field-title TEXT FIELD
+      span.element-titles.text-field-title-focus TEXT FIELD
+      span.element-titles.people-dropdown-top Dropdown
+      span.element-titles.masked-text-field masked text field
+      span.element-titles.date-dropdown-left-title date Dropdown
+      span.element-titles.date-dropdown-right-title date Dropdown
+      span.element-titles.filter-date-dropdown-title filter date dropdown
+      span.element-titles.subscription-text-field-title subscription text field
+      span.element-titles.dropdown-room-title dropdown
+      span.element-titles.dropdown-room-title-open dropdown
+      span.element-titles.dropdown-people-open dropdown
+      span.element-titles.dropdown-people-open-add dropdown
+      span.element-titles.rich-checkbox-buttons-title rich Checkbox Buttons
+      span.element-titles.bullet-list-title bullet list
+      span.element-titles.rate-button-title rate button
+      span.element-titles.like-button-title like button
+      span.element-titles.toggle-title toggle
+      span.element-titles.radio-buttons-title radio buttons
+      span.element-titles.checkbox-buttons-title Checkbox Buttons
+      span.element-titles.buttons-title buttons
+      span.element-titles.pagination-title pagination
+      span.element-titles
+      span.element-titles
+      span.element-titles
+      span.element-titles
+
+
+
+
+

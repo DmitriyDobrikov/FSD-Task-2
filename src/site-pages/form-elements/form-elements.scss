@@ -22,6 +22,7 @@ span {
     width: 1440px;
     height: 1853px;
     background: #FFFFFF;
+    margin: 35px auto 48px; 
 }
 
 
@@ -155,6 +156,7 @@ span {
     position: absolute;
     left: 587px;
     top: 1574px;
+    width: 100%;
 }
 
 
@@ -212,6 +214,215 @@ span {
     left: 140px;
     top: 627px;
 }
+
+.form-elements-date-dropdown {
+    position: absolute;
+    left: 141px;
+    top: 522.44px;
+}
+
+.form-elements-text-fields-date {
+    position: absolute;
+    left: 141px;
+    top: 418px;
+}
+
+.form-elements-dropdown-people-not-enter-top {
+    position: absolute;
+    left: 141px;
+    top: 331.44px;
+    z-index: 999999;
+}
+
+.form-elements-text-fields-name {
+    position: absolute;
+    left: 141px;
+    top: 163px;
+}
+
+.form-elements-text-fields-name-focus {
+    position: absolute;
+    left: 141px;
+    top: 247.44px;
+}
+
+
+.form-elements-expandable-close {
+    position: absolute;
+    left: 141px;
+    top: 1196px;
+}
+
+
+
+
+
+
+
+
+
+
+.element-titles {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.text-field-title {
+    position: absolute;
+    left: 141px;
+    top: 143px;
+}
+
+.text-field-title-focus {
+    position: absolute;
+    left: 141px;
+    top: 227.44px;
+}
+
+.people-dropdown-top {
+    position: absolute;
+    left: 141px;
+    top: 311.44px;
+}
+
+.masked-text-field {
+    position: absolute;
+    left: 141px;
+    top: 398px;
+}
+
+.date-dropdown-left-title {
+    position: absolute;
+    left: 141px;
+    top: 502px;
+}
+
+.date-dropdown-right-title {
+    position: absolute;
+    left: 311px;
+    top: 502px;
+}
+
+.filter-date-dropdown-title {
+    position: absolute;
+    left: 141px;
+    top: 607px;
+}
+
+.subscription-text-field-title {
+    position: absolute;
+    left: 141px;
+    top: 712px;
+}
+
+.dropdown-room-title {
+    position: absolute;
+    left: 140px;
+    top: 876px;
+}
+
+.dropdown-room-title-open {
+    position: absolute;
+    left: 140px;
+    top: 960px;
+}
+
+.dropdown-people-open {
+    position: absolute;
+    left: 587px;
+    top: 876px;
+}
+
+.dropdown-people-open-add {
+    position: absolute;
+    left: 979px;
+    top: 876px;
+}
+
+.rich-checkbox-buttons-title {
+    position: absolute;
+    left: 587px;
+    top: 1196px;
+}
+
+.bullet-list-title {
+    position: absolute;
+    left: 979px;
+    top: 1196px;
+}
+
+.rate-button-title {
+    position: absolute;
+    left: 587px;
+    top: 625px;
+}
+
+.like-button-title {
+    position: absolute;
+    left: 587px;
+    top: 534px;
+}
+
+.toggle-title {
+    position: absolute;
+    left: 587px;
+    top: 404.56px;
+}
+
+.radio-buttons-title {
+    position: absolute;
+    left: 587px;
+    top: 313px;
+}
+
+.checkbox-buttons-title {
+    position: absolute;
+    left: 587px;
+    top: 143px;
+}
+
+.buttons-title {
+    position: absolute;
+    left: 979px;
+    top: 231px; 
+}
+
+.pagination-title {
+    position: absolute;
+    left: 980px;
+    top: 540px;
+}
+
+.ui-kit-logo-icon {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 40px;
+}
+
+
+.ui-kit-body {
+    background-color: #E5E5E5;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

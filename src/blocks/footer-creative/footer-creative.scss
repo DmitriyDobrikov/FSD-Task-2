@@ -1,240 +1,38 @@
-
-
-.footer-logo {
-  max-width: 260px;
-}
-
-
-.footer-block {
-    min-height: 372px;
-    background-color: #ffffff;
-    min-width: 320px;
-    /* Включаем режим Flexbox. */
-	  display: flex; 
-  	/* Распределяем элементы внутри шапки */
-	  justify-content: space-between;
-	  /* Выравниваем элементы вертикально по центру. */
-	  align-items: flex-start;
-    position: relative;
-}
-
-
-
-.footer-nav-panel a{
-  display: block;
-  text-align: left;    
-  line-height: 17px;
-  margin-bottom: 20px;
-}
-
-.footer-nav-panel {
-  margin-top: 104px;
-}
-
-
-.subscription-nav {
-  margin-right: 140px;
-}
-
-
-
-.header-links {
-  margin-left: 10px;
-  margin-right: 10px;
-  text-decoration: none;
-}
-
-
-
-
-
-.footer-logo {
-  margin-top: 100px;
-  margin-left: 140px !important;
-  text-align: left;
-}
-
-.footer-logo-img {
-  width: 105.69px;
-  display: block;
-}
-
-.footer-logo-text {
-  margin-top: 20px;
-  display: block;
-  font-family: 'Montserrat';
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-
-
-
-.nav-links {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 14px;
-  color: rgba(31, 32, 65, 0.5);
-  vertical-align: middle;
-  position: relative;
-  max-width: 260px;
-}
-
-
-
-
-
-
-//copyright
-.footer-copyright-text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: rgba(31, 32, 65, 0.75);
-  margin-left: 140px;
-}
-
-.copyright-icons {
-  background-size: 24px;
-  margin: 10px;
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  background-repeat: no-repeat;
-}
-
-.footer-copyright-brands  {
-  margin-right: 140px;
-}
-
-.footer-widget-twitter {
-  background-image: url("../../element/images/twitter.png");
-}
-
-.footer-widget-facebook {
-  background-image: url("../../element/images/facebook.png");
-}
-
-.footer-widget-instagram {
-  background-image: url("../../element/images/instagram.png");
-}
-//copyright
-
-
-
-
-
-
-@media (max-width: 1250px){
-
-  .subscription-nav {
-    margin-right: 0px;
-  }
-
-  .footer-nav-panel a{
-    margin-bottom: 20px;
-  }
-
-  .footer-logo {
-    margin-left: 0px !important;
-  }
-
-  .footer-text-field {
-    display: block;
-  }
-
-  .footer-copyright-text {
-    margin-left: 70px;
-  }
-
-  .footer-copyright-brands  {
-    margin-right: 70px;
-  }
-
-}
-
-
-@media (max-width: 1000px){
-  .footer-block{
-      /* Меняем оси шапки, делая её вертикальной. */
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .subscription-nav {
-    margin-right: 0px;
-  }
-
-  .footer-nav-panel {
-    display: flex;
-    margin-top: 0px;
-  }
-
-  .footer-logo {
-    margin-left: 0px;
-  }
-
-  .subscription-nav {
-    display: block;
-  }
-
-  .footer-copyright-text {
-    margin-right: 0px;
-  }
-
-  .footer-copyright-brands  {
-    margin-right: 0px;
-  }
-
-}
-
-
-@media (min-width: 1250px){
-  .header-nav-buttons {
-    margin-right: 140px;
-  }
-}
-
-.nav-links-bold {
-  font-weight: bold;
-  color: rgba(31, 32, 65, 0.75);
-}
-
-
-
-
-
-.footer-copyright {
-  border-top: 1px solid #E5E5E5;
-  width: 100%;
-  min-height: 70px;
+.footer-creative-block {
+  min-height: 367px;
+  background-color: #ffffff;
+  //min-width: 320px;
+  width: 768px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   /* Включаем режим Flexbox. */
   display: flex; 
   /* Распределяем элементы внутри шапки */
   justify-content: space-between;
   /* Выравниваем элементы вертикально по центру. */
   align-items: center;
-  background-color: #ffffff;
+  flex-direction: column; 
+}
+
+.footer-creative-logo-img {
+  width: 105.69px;
+  display: flex;
+  margin-top: 120px;
+}
+
+.footer-copyright-brands-creative {
+  display: flex;
 }
 
 
-@media (max-width: 1000px){
-  .footer-copyright{
-      /* Меняем оси шапки, делая её вертикальной. */
-    flex-direction: column;
-
-  }
-
+.footer-creative-copyright-text {
+  margin: 20px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: rgba(31, 32, 65, 0.75);
 }
 
-
-
-
-
-
+.footer-copyright-brands-creative{
+  margin-bottom: 120px;
+}

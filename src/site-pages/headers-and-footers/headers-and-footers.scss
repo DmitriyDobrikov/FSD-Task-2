@@ -1,4 +1,43 @@
-body {
-    background-color: cadetblue;
-    padding: 0px;
+.haeder-and-footer-block {
+    background-color: #F4F4F6;
+    width: 1440px;
+    height: 1350px;
+    position: relative;
+    margin: 35px auto 48px; 
 }
+
+.header-init-conteiner {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+}
+
+.header-not-init-conteiner {
+    position: absolute;
+    top: 140px;
+    width: 100%;
+}
+
+.footer-widgets-conteiner {
+    position: absolute;
+    top: 360px;
+    width: 100%;
+}
+
+.footer-creative-conteiner {
+    position: absolute;
+    left: 336px;
+    top: 843px;
+}
+
+.ui-kit-logo-icon {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 40px;
+}
+
+
+.ui-kit-body {
+    background-color: #E5E5E5;
+  }

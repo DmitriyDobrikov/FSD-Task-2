@@ -1,12 +1,12 @@
-mixin expandable-checkbox-paste()
+mixin expandable-checkbox-paste(tetle_text, open_checked)
 
     script 
         epandable-checkbox.js
 
-    button.expandable-checkbox-button.qwe222(type='checkbox' checked='checked')
+    button.expandable-checkbox-button.qwe222(type='checkbox')
         div.expandable-block
-            h3.expandable-h EXPANDEBLE CHECHBOX LIST
-            i.material-icons.expand-icon expand_less
+            h3.expandable-h=tetle_text 
+            i.material-icons.expand-icon=open_checked
         div.expandable-checkbox-list
             div
                 input#expandable-1.expandable-checkbox(type='checkbox')

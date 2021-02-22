@@ -19,3 +19,10 @@ import '../../blocks/room-search-icon/room-search-icon.js'
 
 import '../../element/date-dropdown/date-dropdown.js'
 import '../../element/date-dropdown/date-dropdown.scss'
+
+
+let uiKitLogo = document.querySelectorAll('.ui-kit-logo-icon')
+
+uiKitLogo.forEach(el => {
+    el.src = require("../../element/images/ui-kit-logo.png");
+});

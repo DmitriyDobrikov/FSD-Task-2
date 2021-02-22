@@ -67,6 +67,8 @@
 .expandable-block {
 	height: 25px;
 	line-height: 25px;
+	text-align: left;
+	padding-left: 0px;
 }
 
 .expand-icon {
@@ -80,9 +82,11 @@
 	line-height: normal;
 	display: inline-block;
 	vertical-align: middle;
+	font-size: 12px;
 }
 
 .expandable-label-checked::before {
 	border-color: #BC9CFF;
 	background-image: url('marker.svg');
 }
+

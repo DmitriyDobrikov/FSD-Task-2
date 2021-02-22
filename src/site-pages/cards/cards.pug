@@ -7,25 +7,34 @@ include ../../element/date-dropdown/date-dropdown
 
 
 
-div.cards-background
 
-    div.cards-find-block
-        +find-block() 
 
-    div.cards-registration-block
-        +registration-block()
+html
+  head
+    title Cards
+  body.ui-kit-body
 
-    div.cards-hotel-number-block
-        +hotel-number-block()
+    div.cards-background
 
-    div.cards-login-block
-        +login-block()
+        img.ui-kit-logo-icon(src="", alt="")
 
-    div.cards-room-search-icon-block-lux
-        +room-search-icon-block('888', '9 990', 5, 'lux', 145)
- 
-    div.cards-room-search-icon-block
-        +room-search-icon-block('840', '9 900', 4, '', 65)   
+        div.cards-find-block
+            +find-block() 
 
-    div.cards-calendar 
-        +date-dropdown-paste('calendar')
+        div.cards-registration-block
+            +registration-block()
+
+        div.cards-hotel-number-block
+            +hotel-number-block()
+
+        div.cards-login-block
+            +login-block()
+
+        div.cards-room-search-icon-block-lux
+            +room-search-icon-block('888', '9 990', 5, 'lux', 145)
+    
+        div.cards-room-search-icon-block
+            +room-search-icon-block('840', '9 900', 4, '', 65)   
+
+        div.cards-calendar 
+            +date-dropdown-paste('calendar')

@@ -4,6 +4,7 @@
     height: 1350px;
     position: relative;
     padding: 0px;
+    margin: 35px auto 48px; 
 }
 
 
@@ -48,3 +49,15 @@
     left: 980px;
     top: 106px;    
 }
+
+.ui-kit-logo-icon {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 40px;
+}
+
+
+.ui-kit-body {
+    background-color: #E5E5E5;
+  }

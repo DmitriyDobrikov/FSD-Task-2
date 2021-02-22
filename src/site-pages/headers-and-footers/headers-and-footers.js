@@ -9,4 +9,12 @@ import '../../blocks/footer-widgets/footer-widgets.js'
 import '../../element/text-fields/text-fields.scss'
 
 
+import '../../blocks/footer-creative/footer-creative.scss'
+import '../../blocks/footer-creative/footer-creative.js'
 
+
+let uiKitLogo = document.querySelectorAll('.ui-kit-logo-icon')
+
+uiKitLogo.forEach(el => {
+    el.src = require("../../element/images/ui-kit-logo.png");
+});

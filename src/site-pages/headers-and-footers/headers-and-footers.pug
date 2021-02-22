@@ -1,25 +1,36 @@
 //- include ../../element/button-long/button-long
 include ../../blocks/header-cite/header-cite
 include ../../blocks/footer-widgets/footer-widgets
+include ../../blocks/footer-creative/footer-creative
+
+
+
 
 
 html
   head
     title Headers&Footers
-  body
-    h1 My Site
-    p Welcome to my super lame site.
-    +header-cite('init', 'Юлий Цезарь')
-    br
-    br
-    br
-    +header-cite('not init')
-    br
-    br
-    br
-    br
-    br
-    +footer-widgets()
+  body.ui-kit-body
 
 
-  
+    div.haeder-and-footer-block
+
+        img.ui-kit-logo-icon(src="", alt="")
+
+        div.header-init-conteiner
+            +header-cite('not init')
+        div.header-not-init-conteiner
+            +header-cite('init', 'Юлий Цезарь')
+        div.footer-widgets-conteiner
+            +footer-widgets()
+        div.footer-creative-conteiner
+            +footer-creative()
+
+//- div.haeder-and-footer-block
+//-     +header-cite('init', 'Юлий Цезарь')
+//- div
+//-     +header-cite('not init')
+//- div 
+//-     +footer-widgets()
+//- div
+//-     +footer-creative()
