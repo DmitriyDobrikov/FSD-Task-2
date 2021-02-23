@@ -1,0 +1,18 @@
+include ../../blocks/header-cite/header-cite
+include ../../blocks/footer-widgets/footer-widgets
+include ../../blocks/footer-creative/footer-creative
+
+include ../../blocks/find/find
+
+
+html 
+    head 
+        title Registration 
+    body 
+        header 
+            +header-cite('not init')
+        main.landind-page-main 
+            div.landind-page-find-block
+                +find-block() 
+        footer 
+            +footer-widgets()

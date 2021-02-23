@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    /* Растягиваем body по высоте html */
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.reg-and-sign-main {
+    background-image: url('../../element/images/reg-and-sign-background.png');
+    // background-size: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 686px;
+    text-align: center;
+}
+
+.call-reg-on-page {
+    margin: 20px auto 20px;
+    width: 380px;
+    display: none;
+}
+
+.call-sign-on-page {
+    margin: 171px auto 171px;
+    width: 380px;
+}

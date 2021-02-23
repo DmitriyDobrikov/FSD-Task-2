@@ -1,0 +1,53 @@
+include ../../blocks/header-cite/header-cite
+include ../../blocks/footer-widgets/footer-widgets
+include ../../blocks/footer-creative/footer-creative
+
+include ../../element/dropdown/dropdown
+include ../../element/dropdown-room/dropdown-room
+include ../../element/range-slider/range-slider
+include ../../element/pagination/pagination
+include ../../element/date-dropdown/date-dropdown
+include ../../element/checkbox-buttons/checkbox-buttons
+include ../../element/rich-checkbox-button/rich-checkbox-button
+include ../../element/expandable-checkbox/expandable-checkbox
+include ../../blocks/room-search-icon/room-search-icon
+
+
+
+html 
+    head 
+        title Search room
+    body 
+        header 
+            +header-cite('not init')
+
+        main.search-room-main 
+            div.search-room-blocks-elements
+                +date-dropdown-paste('date_dropdown')
+                +dropdown-people-paste()
+                +range-slider-paste("RANGE SLIDER")
+                +checkbox-paste()
+                +rich-checkbox-paste()
+                +dropdown-room-paste()
+                +expandable-checkbox-paste('EXPANDEBLE CHECHBOX LIST', 'expand_less')
+            div.search-room-blocks-blocks        
+                +room-search-icon-block('888', '9 990', 5, 'lux', 145)
+                +room-search-icon-block('840', '9 900', 4, '', 65)
+                +room-search-icon-block('980', '8 500', 3, 'lux', 35)  
+                +room-search-icon-block('856', '5 500', 5, '', 45)  
+                +room-search-icon-block('740', '6 000', 4, '', 44)  
+                +room-search-icon-block('982', '5 800', 3, '', 56)  
+                +room-search-icon-block('678', '5 500', 5, '', 45) 
+                +room-search-icon-block('450', '5 300', 4, '', 39)  
+                +room-search-icon-block('350', '5 000', 3, '', 77)  
+                +room-search-icon-block('666', '5 000', 5, '', 25)  
+                +room-search-icon-block('444', '5 000', 3, '', 15)  
+                +room-search-icon-block('352', '5 000', 3, '', 55)     
+
+
+
+                
+                +pagination-paste()
+                 
+        footer 
+            +footer-widgets()

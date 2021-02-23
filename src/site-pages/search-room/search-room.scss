@@ -1,0 +1,29 @@
+@import '../../blocks/room-search-icon/room-search-icon.scss';
+//@import '../../element/shrift/fonts.scss';
+//@import '../../element/rate-button/rate-button.scss';
+
+body {
+    margin: 0;
+    /* Растягиваем body по высоте html */
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Montserrat';
+}
+
+.search-room-main {
+    background-color: #ffffff;
+    min-height: 1350px;
+}
+
+
+
+
+
+
+
+// @media (max-width: 1250px){
+//     .landind-page-find-block {
+//         margin: 70px auto 70px;
+//     }
+// }

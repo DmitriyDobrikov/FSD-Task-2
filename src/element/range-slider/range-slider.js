@@ -1,6 +1,7 @@
 import '../../../node_modules/jquery-ui-slider/jquery-ui.min.js'
 import '../../../node_modules/jquery-ui-slider/jquery-ui.js'
 import '../../../node_modules/jquery-ui-slider/jquery-ui.css'
+import '../shrift/fonts.scss'
 
 function spaceAdd(string) {
     if (string.length > 3) {

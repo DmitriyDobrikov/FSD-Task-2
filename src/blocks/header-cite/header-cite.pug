@@ -3,7 +3,7 @@ include ../../element/buttons/buttons
 
 
 mixin header-cite(header_type, user_name)
-    header.header-block
+    div.header-block
 
         
         img.header-logo-img(src="")
@@ -26,9 +26,9 @@ mixin header-cite(header_type, user_name)
             //nav.header-nav-panel.header-nav-buttons
 
             if header_type == 'not init'
-                a.header-links.nav-links(href="") 
+                span.header-links.nav-links(href="") 
                     +button-paste('button-smole-border-header', 'ВОЙТИ')
-                a.header-links.nav-links.header-nav-buttons(href="")
+                span.header-links.nav-links.header-nav-buttons(href="")
                     +button-paste('button-header' , "ЗАРЕГЕСТРИРОВАТЬСЯ")
 
             if header_type == 'init'

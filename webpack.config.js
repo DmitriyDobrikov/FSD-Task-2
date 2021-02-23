@@ -4,8 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const webpack = require('webpack')
 
-// require('webpack-jquery-ui');
-// require('webpack-jquery-ui/css');
+
 
 const PATHS = {
     src: path.join(__dirname, './src'),
@@ -16,6 +15,7 @@ const PATHS = {
 
 const pageNames = [
     'form-elements', 'cards', 'main', 'colors-and-type', 'headers-and-footers', 
+    'landing-page', 'registration', 'room-details', 'search-room',
   ];
   
   const entries = pageNames.reduce(
@@ -24,14 +24,6 @@ const pageNames = [
     ), {},
   );
 
-//const PAGES_DIR = `${PATHS.src}/site-pages/`
-// const PAGES_DIR = pageNames.reduce(
-//     (accumulator, pageName) => (
-//       { ...accumulator, ...{ [pageName]: `${PATHS.src}/site-pages/${pageName}` } }
-//     ), {},
-// );
-
-//const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
 
 const sitePages = pageNames
   .map((name) => new HtmlWebpackPlugin({
@@ -61,7 +53,6 @@ module.exports = {
         compress: true,
         port: 9000,
         hot: true,
-        openPage: 'main.html',
       },
 
     plugins: [

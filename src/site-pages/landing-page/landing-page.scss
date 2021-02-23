@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    /* Растягиваем body по высоте html */
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.landind-page-main {
+    background-image: url('../../element/images/landing-page-background.png');
+    // background-size: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 686px;
+}
+
+
+.landind-page-find-block {
+    margin-left: 140px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 380px;
+}
+
+@media (max-width: 1250px){
+    .landind-page-find-block {
+        margin: 70px auto 70px;
+    }
+}

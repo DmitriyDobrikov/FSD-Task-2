@@ -1,0 +1,21 @@
+include ../../blocks/header-cite/header-cite
+include ../../blocks/footer-widgets/footer-widgets
+include ../../blocks/footer-creative/footer-creative
+
+include ../../blocks/registration/registration
+include ../../blocks/login/login
+
+
+html 
+    head 
+        title Registration 
+    body 
+        header 
+            +header-cite('not init')
+        main.reg-and-sign-main 
+            div.call-reg-on-page
+                +registration-block()
+            div.call-sign-on-page
+                +login-block()
+        footer 
+            +footer-widgets()
