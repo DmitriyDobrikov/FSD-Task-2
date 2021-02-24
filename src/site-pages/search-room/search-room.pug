@@ -22,32 +22,47 @@ html
             +header-cite('not init')
 
         main.search-room-main 
-            div.search-room-blocks-elements
-                +date-dropdown-paste('date_dropdown')
-                +dropdown-people-paste()
-                +range-slider-paste("RANGE SLIDER")
-                +checkbox-paste()
-                +rich-checkbox-paste()
-                +dropdown-room-paste()
-                +expandable-checkbox-paste('EXPANDEBLE CHECHBOX LIST', 'expand_less')
-            div.search-room-blocks-blocks        
-                +room-search-icon-block('888', '9 990', 5, 'lux', 145)
-                +room-search-icon-block('840', '9 900', 4, '', 65)
-                +room-search-icon-block('980', '8 500', 3, 'lux', 35)  
-                +room-search-icon-block('856', '5 500', 5, '', 45)  
-                +room-search-icon-block('740', '6 000', 4, '', 44)  
-                +room-search-icon-block('982', '5 800', 3, '', 56)  
-                +room-search-icon-block('678', '5 500', 5, '', 45) 
-                +room-search-icon-block('450', '5 300', 4, '', 39)  
-                +room-search-icon-block('350', '5 000', 3, '', 77)  
-                +room-search-icon-block('666', '5 000', 5, '', 25)  
-                +room-search-icon-block('444', '5 000', 3, '', 15)  
-                +room-search-icon-block('352', '5 000', 3, '', 55)     
 
+            aside.search-room-elements
+                div.search-room-elements-block
+                    span.search-room-elements-title.search-room-elements-position даты пребывания в отеле
+                    div.search-room-date-dropdown.search-room-elements-position
+                        +date-dropdown-paste('date_dropdown')
+                    span.search-room-elements-position.search-room-elements-title.search-room-elements-title-people гости
+                    div.search-room-elements-position.search-room-dropdown-people
+                        +dropdown-people-paste()
+                    div.search-room-elements-position.search-room-range-slider
+                        +range-slider-paste("ДИАПАЗОН ЦЕНЫ")
+                    span.search-room-elements-position.search-room-elements-range-slider-text Стоимость за сутки пребывания в номере
+                    span.search-room-elements-position.search-room-elements-title.search-room-elements-title-checkbox правила дома
+                    div.search-room-elements-position.search-room-checkbox
+                        +checkbox-paste()
+                    span.search-room-elements-position.search-room-elements-title.search-room-elements-title-rich-checkbox доступность
+                    div.search-room-elements-position.search-room-rich-checkbox
+                        +rich-checkbox-paste()
+                    span.search-room-elements-position.search-room-elements-title.search-room-elements-title-dropdown-room удобства номера
+                    div.search-room-elements-position.search-room-dropdown-room
+                        +dropdown-room-paste()
+                    div.search-room-elements-position.search-room-expandable-checkbox
+                        +expandable-checkbox-paste('дополнительные удобства', 'expand_less')
 
-
-                
-                +pagination-paste()
+            section.search-room-blocks      
+                h2.search-room-blocks-title Номера, которые мы для вас подобрали
+                div.search-room-blocks-pages
+                    +room-search-icon-block('888', '9 990', 5, 'lux', 145)
+                    +room-search-icon-block('840', '9 900', 4, '', 65)
+                    +room-search-icon-block('980', '8 500', 3, 'lux', 35)  
+                    +room-search-icon-block('856', '5 500', 5, '', 45)  
+                    +room-search-icon-block('740', '6 000', 4, '', 44)  
+                    +room-search-icon-block('982', '5 800', 3, '', 56)  
+                    +room-search-icon-block('678', '5 500', 5, '', 45) 
+                    +room-search-icon-block('450', '5 300', 4, '', 39)  
+                    +room-search-icon-block('350', '5 000', 3, '', 77)  
+                    +room-search-icon-block('666', '5 000', 5, '', 25)  
+                    +room-search-icon-block('444', '5 000', 3, '', 15)  
+                    +room-search-icon-block('352', '5 000', 3, '', 55)     
+                div.search-room-blocks-paggination
+                    +pagination-paste()
                  
         footer 
             +footer-widgets()

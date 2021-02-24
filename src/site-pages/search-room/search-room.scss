@@ -12,18 +12,137 @@ body {
 }
 
 .search-room-main {
-    background-color: #ffffff;
-    min-height: 1350px;
+    display: flex;
+    padding: 29px 9vw 75px;
+    border-bottom: solid 1px rgba(31,32,65,.25);
 }
 
 
+.search-room-elements {
+    margin-top: 3px;
+    margin-right: 4vw;
+    display: block;
+    height: 705px;
+}
+
+.search-room-elements-block {
+    position: relative;
+    width: 320px;
+}
+
+.search-room-blocks {
+    width: 100%;
+}
+
+.search-room-blocks-pages {
+    display: grid !important;
+    justify-content: space-between;
+    row-gap: 2px;
+    -moz-column-gap: 12px;
+    column-gap: 2px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    margin-bottom: 39px;
+}
+
+.search-room-blocks-paggination {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.search-room-elements-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+}
+
+.search-room-elements-position {
+    position: absolute;
+    left: 0;
+}
+
+.search-room-date-dropdown {
+    top: 20px;
+}
+
+.search-room-elements-title-people  {
+    top: 75px;
+}
+
+.search-room-dropdown-people {
+    top: 94px;
+    background-color: #ffffff;
+    z-index: 99999;
+}
+
+.search-room-range-slider {
+    top: 156px;
+}
+
+.search-room-elements-title-checkbox {
+    top: 270px;
+}
+
+.search-room-checkbox {
+    top: 291px;
+}
+
+.search-room-elements-title-rich-checkbox {
+   top: 430px;
+}
+
+.search-room-rich-checkbox {
+    top: 451px;
+}
+
+.search-room-elements-title-dropdown-room {
+    top: 585px;
+}
+
+.search-room-dropdown-room {
+    top: 605px;
+    background-color: #ffffff;
+    z-index: 999999 ;
+}
+
+.search-room-expandable-checkbox {
+    top: 671px;
+    background-color: #ffffff;
+    z-index: 999999 ;
+    margin-bottom: 10px;
+}
+
+.search-room-blocks-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1F2041;
+    margin-top: 0px;
+}
+
+.search-room-elements-range-slider-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(31, 32, 65, 0.5);
+    top: 226px;
+}
 
 
+@media (max-width: 900px) {
+    .search-room-main {
+        flex-direction: column;
+    }
 
+    .search-room-elements {
+        margin-right: 0;
+    }
 
-
-// @media (max-width: 1250px){
-//     .landind-page-find-block {
-//         margin: 70px auto 70px;
-//     }
-// }
+}
