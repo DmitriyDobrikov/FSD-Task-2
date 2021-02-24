@@ -2,8 +2,9 @@
     //max-width: 711px;
     height: 133px;
     position: relative;
-    //min-width: 320px;
-    width: 100%;
+    min-width: 320px;
+    width: 50vw;
+    max-width: 710px;
     color: rgba(31, 32, 65, 0.75);
     font-family: 'Montserrat';
     font-style: normal;
@@ -38,15 +39,14 @@
 
 .comment-text {
     height: 93px;
-    width: 100%;
+    
     position:absolute;
     top: 48px;
     left: 48px;
-    min-width: 271px;
-    max-width: 590px;
+    // min-width: 271px;
+    // max-width: 590px;
+    width: 92%;
 }
-
-
 
 .like-block {
     width: 48px;

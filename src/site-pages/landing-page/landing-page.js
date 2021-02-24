@@ -14,14 +14,3 @@ import '../../element/text-fields/text-fields.scss'
 import '../../blocks/find/find.scss'
 import '../../blocks/find/find.js'
 
-
-let linkToRegistrationReg = document.querySelector('#button-big-reg')
-let linkToRegistrationSign = document.querySelector('.button-smole-border-header')
-
-linkToRegistrationReg.onclick = function () {
-    window.location='./registration.html'
-}
-
-linkToRegistrationSign.onclick = function () {
-    window.location='./registration.html'
-}

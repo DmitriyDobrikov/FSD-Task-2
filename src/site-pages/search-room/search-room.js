@@ -36,30 +36,8 @@ import '../../element/expandable-checkbox/expandable-checkbox.scss'
 import '../../blocks/room-search-icon/room-search-icon.scss'
 import '../../blocks/room-search-icon/room-search-icon.js'
 
-// import '../../element/rate-button/rate-button.scss'
 
 import '../../element/pagination/pagination.js'
 import '../../element/pagination/pagination.scss'
 
 
-
-
-let linkToRegistrationReg = document.querySelector('#button-big-reg')
-let linkToRegistrationSign = document.querySelector('.button-smole-border-header')
-
-linkToRegistrationReg.onclick = function () {
-    window.location='./registration.html'
-}
-
-linkToRegistrationSign.onclick = function () {
-    window.location='./registration.html'
-}
-
-
-// let roomSearchIcon = document.querySelectorAll('.room-search-icon-image')
-
-// roomSearchIcon.forEach(element => {
-//     element.src = require(`../../element/images/twitter.png`);
-//     // element.src = require(`../../element/images/twitter.png`);
-//     alert(element)
-// });

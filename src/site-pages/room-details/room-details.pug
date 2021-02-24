@@ -1,0 +1,33 @@
+include ../../blocks/header-cite/header-cite
+include ../../blocks/footer-widgets/footer-widgets
+include ../../blocks/footer-creative/footer-creative
+
+include ../../element/bullet-list/bullet-list
+include ../../element/comment/comment
+include ../../element/comfort-icons/comfort-icons
+include ../../blocks/hotel-number/hotel-number
+
+
+
+
+html 
+    head 
+        title Search room
+    body 
+        header 
+            +header-cite('not init')
+
+        main.room-details-main 
+            div.room-details-content-block
+                div.room-details-information-block
+                    div.room-details-comments-block
+                        +comment(12, 
+                        "add")    
+                    div
+                        +bullet-list-paste() 
+                    div
+                        +comfort-icons-paste()
+                aside 
+                    +hotel-number-block()
+        footer 
+            +footer-widgets()
