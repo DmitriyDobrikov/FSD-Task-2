@@ -5,16 +5,17 @@ mixin comment(number_like, added_like, user_name, date_comment, comment_text)
     div.comment
         //- div.comment-header
         div.avatar
+            img.user-avatar(src="", alt=user_name)
         div.user
-            span.user-name Мурад Сарафанов
+            span.user-name=user_name
             br
-            span.date-comment 5 дней назад
+            span.date-comment=date_comment
         //- div.comment-content
         div.like-block
             span
                 +like-buttons(number_like, added_like)
         div.comment-text
-            span Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+            span=comment_text
 
 
 

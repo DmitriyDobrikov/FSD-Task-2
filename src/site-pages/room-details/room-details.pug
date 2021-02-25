@@ -6,6 +6,7 @@ include ../../element/bullet-list/bullet-list
 include ../../element/comment/comment
 include ../../element/comfort-icons/comfort-icons
 include ../../blocks/hotel-number/hotel-number
+include ../../element/vote/vote
 
 
 
@@ -18,16 +19,48 @@ html
             +header-cite('not init')
 
         main.room-details-main 
+            div.room-details-images
+                div.room-details-main-image
+                    img.room-details-room-image.main-image(src="", alt="image-1")
+                div.room-details-side-image  
+                    img.room-details-room-image.side-image(src="", alt="image-2")
+                    img.room-details-room-image.side-image(src="", alt="image-3")
+
+
             div.room-details-content-block
                 div.room-details-information-block
+                    div.room-details-comfort-icons
+                        h2 Сведения о номере
+                        +comfort-icons-paste('lux')
                     div.room-details-comments-block
-                        +comment(12, 
-                        "add")    
-                    div
-                        +bullet-list-paste() 
-                    div
-                        +comfort-icons-paste()
+                        h2 Отзывы посетителей номера
+                        div
+                            +comment(
+                                12, 
+                                "add",
+                                'Мурад Сарафанов',
+                                '5 дней назад',
+                                'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
+                            )   
+                        div
+                            +comment(
+                                2, 
+                                "",
+                                'Патрисия Стёклышкова',
+                                'Неделю назад',
+                                'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент.',
+                            )  
+                    div.room-details-rules-and-cancellation-block
+                        div.room-details-rules
+                            h2 Правила
+                            +bullet-list-paste() 
+                        div.room-details-cancellation
+                            h2 Отмена
+                            div.room-details-cancellation-text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+
                 aside 
-                    +hotel-number-block()
+                    +hotel-number-block({int_number: '888'})
+                    
+                    +vote-paste()
         footer 
             +footer-widgets()

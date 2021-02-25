@@ -2,12 +2,13 @@ include ../../element/date-dropdown/date-dropdown
 include ../../element/dropdown/dropdown
 include ../../element/buttons/buttons
 
-mixin hotel-number-block()
+mixin hotel-number-block({int_number=''} = {})
+    - let numb_of_hotel = int_number
 
     div.hotel-number-block
         div.hotel-number-block-title
             span.hotel-numbe-title.for-icon-number №  
-            span.hotel-numbe-title.for-int-number   888
+            span.hotel-numbe-title.for-int-number=numb_of_hotel
             span.hotel-numbe-block-title.for-lux люкс
 
         div.hotel-number-price-block

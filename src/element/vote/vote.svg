@@ -1,0 +1,19 @@
+<svg width="100%" height="100%" viewBox="0 0 42 42" class="donut vote-diagram-svg">
+    <linearGradient id='g1' x1='.5' x2='.5' y2='1'>
+        <stop stop-color='#FFE39C'/>
+        <stop offset='1' stop-color='#FFBA9C'/>
+    </linearGradient>
+    <linearGradient id='g2' x1='.5' x2='.5' y2='1'>
+        <stop stop-color='#BC9CFF'/>
+        <stop offset='1' stop-color='#8BA4F9'/>
+    </linearGradient>
+    <linearGradient id='g3' x1='.5' x2='.5' y2='1'>
+        <stop stop-color='#6FCF97'/>
+        <stop offset='1' stop-color='#66D2EA'/>
+    </linearGradient>
+        <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fff" stroke-width="1"></circle>
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="url(#g3)" stroke-width="1" stroke-dasharray="24.5 75.5" stroke-dashoffset="0"></circle>
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="url(#g2)" stroke-width="1" stroke-dasharray="24.5 75.5" stroke-dashoffset="25"></circle>
+        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill='transparent' stroke="url(#g1)" stroke-width="1" stroke-dasharray="49.5 50.5" stroke-dashoffset="75" viewBox="x-min y-min 290 290"></circle>
+</svg>

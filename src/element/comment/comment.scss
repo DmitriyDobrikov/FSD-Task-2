@@ -1,6 +1,6 @@
 .comment {
     //max-width: 711px;
-    height: 133px;
+    height: 150px;
     position: relative;
     min-width: 320px;
     width: 50vw;
@@ -25,10 +25,9 @@
 .avatar {
     height: 48px;
     width: 48px;
-    background-image: url("avatar.jpg");
-    background-position: center;
-    background-size: 48px;
-    background-repeat: no-repeat;
+}
+.user-avatar {
+    width: 100%;
 }
 
 
@@ -38,8 +37,8 @@
 }
 
 .comment-text {
-    height: 93px;
-    
+    //height: 80%;
+    height: auto;
     position:absolute;
     top: 48px;
     left: 48px;

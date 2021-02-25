@@ -1,17 +1,23 @@
-mixin comfort-icons-paste()
+mixin comfort-icons-paste(lux_number)
 
-    div.qwe
-        div.icon.smile-city
-            i.material-icons.comfort-icons insert_emoticon
-        div.text.smile-city
-            h3 Комфорт
-            span.comfort-text Шумопоглощающие стены
+    div.comfort-icon-conteiner
+        div.comfort-icon-block
+            div.icon.smile-city
+                i.material-icons.comfort-icons insert_emoticon
+            div.text.smile-city
+                h3 Комфорт
+                span.comfort-text Шумопоглощающие стены
 
-    br
-
-    div.qwe
-        div.icon.smile-city
-            i.material-icons.comfort-icons location_city
-        div.text.smile-city
-            h3 Удобство
-            span.comfort-text Окно в каждой из спален
+        div.comfort-icon-block
+            div.icon.smile-city
+                i.material-icons.comfort-icons location_city
+            div.text.smile-city
+                h3 Удобство
+                span.comfort-text Окно в каждой из спален
+        if lux_number == 'lux'
+            div.comfort-icon-block
+                div.icon.smile-city
+                    i.material-icons.comfort-icons whatshot
+                div.text.smile-city
+                    h3 Уют
+                    span.comfort-text Номер оснащён камином
