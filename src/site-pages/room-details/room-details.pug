@@ -29,9 +29,13 @@ html
 
             div.room-details-content-block
                 div.room-details-information-block
-                    div.room-details-comfort-icons
-                        h2 Сведения о номере
-                        +comfort-icons-paste('lux')
+                    div.room-details-comfort-block
+                        div.room-details-comfort-icons
+                            h2 Сведения о номере
+                            +comfort-icons-paste('lux')
+                        div.room-details-vote
+                            h2 Впечатления от номера
+                            +vote-paste()
                     div.room-details-comments-block
                         h2 Отзывы посетителей номера
                         div
@@ -61,6 +65,6 @@ html
                 aside 
                     +hotel-number-block({int_number: '888'})
                     
-                    +vote-paste()
+                    
         footer 
             +footer-widgets()

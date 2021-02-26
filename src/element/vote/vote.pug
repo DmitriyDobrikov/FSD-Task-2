@@ -5,10 +5,27 @@ mixin vote-paste()
 
 
     div.vote-diagram
-        //- div.vote-diagram
-        //-     span.vote-diagram-number 260
-        //-     span.vote-diagram-text голосов
-        div
+
+
+ 
+       
+
+        
+
+
+        ul.vote-diagram-text-list
+            li.vote-diagram-text-item.vote-diagram-text-item-5 Великолепно
+            li.vote-diagram-text-item.vote-diagram-text-item-4 Хорошо
+            li.vote-diagram-text-item.vote-diagram-text-item-3 Удовлетворительно
+            li.vote-diagram-text-item.vote-diagram-text-item-2 Разочарован
+
+
+        div.vote-diagram-svg-conteiner
+
+            div.vote-diagram-number-votes
+                span.vote-diagram-number 260
+                span.vote-diagram-text ГОЛОСОВ
+
             code
                 svg.vote-diagram-svg
                     <svg width="120" height="120" viewBox="4.6 4.6 33 33" class="donut">
@@ -30,3 +47,5 @@ mixin vote-paste()
                         <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="url(#g2)" stroke-width="1" stroke-dasharray="24.5 75.5" stroke-dashoffset="25"></circle>
                         <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill='transparent' stroke="url(#g1)" stroke-width="1" stroke-dasharray="49.5 50.5" stroke-dashoffset="75" viewBox="x-min y-min 290 290"></circle>
                     </svg>
+
+        

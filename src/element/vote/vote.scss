@@ -1,4 +1,88 @@
 .vote-diagram-svg {
     width: 120px;
     height: 120px;
+    
+}
+
+.vote-diagram {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.vote-diagram-text-list {
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    margin-bottom: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    
+}
+
+.vote-diagram-svg-conteiner {
+    position: absolute;
+}
+
+.vote-diagram-text-item {
+    list-style-type: none;
+}
+
+.vote-diagram-text-item::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: -30px;  
+    margin-right: 5px;
+}
+
+.vote-diagram-text-item-5::before {
+    background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+}
+
+.vote-diagram-text-item-4::before {
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.vote-diagram-text-item-3::before {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.vote-diagram-text-item-2::before {
+    background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+}
+
+
+.vote-diagram-number-votes {
+    position: absolute;
+    left: 28px;
+    top: 35px;
+    text-align: center;
+}
+
+
+.vote-diagram-number {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #BC9CFF;
+    display: block;
+}
+
+.vote-diagram-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BC9CFF;
+    display: block;
 }
