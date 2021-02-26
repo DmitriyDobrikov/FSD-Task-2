@@ -4,10 +4,12 @@
 <h2>Описание проекта</h2>
 <span>Вёрстка макета по программе обучения <a href="https://www.metalamp.io/">MetaLamp</a></span>
 <h2>Стек технологий</h2>
+<pre>
 <a href="https://webpack.js.org/">Webpack</a>
 <a href="https://gist.github.com/neretin-trike/53aff5afb76153f050c958b82abd9228">Pug</a>
 <a href="https://sass-scss.ru/">SCSS</a>
 <a href="https://jquery.com/">jQuery</a>
+</pre>
 <h2>Установка</h2>
 <pre>
 git clone https://github.com/DmitriyDobrikov/FSD-task-2
